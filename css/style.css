@@ -1,0 +1,9 @@
+/*components*/
+@import 'components/fonts.css';
+@import 'components/button.css';
+
+/*layout*/
+@import 'layout/common.css';
+
+/*pages*/
+@import 'pages/t20welcomebonus.css';
