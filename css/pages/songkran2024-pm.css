@@ -1,0 +1,206 @@
+.songkran2024-pm.mainContent {
+    background-color: #0c2543;
+    background-image: url(../../images/common/songkran2024-pm/mobile-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px 0 0;
+    background-position: center 0;
+}
+.songkran2024-pm.mainContent img {
+    user-select: none;
+    pointer-events: none;
+}
+/* MAIN BANNER */
+.songkran2024-pm .imageBanner img {
+    transform: scale(1.35);
+}
+/* PM CONTENT */
+.songkran2024-pm .pm-wrapper {
+    padding: 25px 15px;
+    border: 2px solid #f2e33e;
+    border-radius: 20px;
+    background-color: #001b42;
+}
+.songkran2024-pm .pm-wrapper:after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -100px;
+    right: -100px;
+    bottom: -30px;
+    background-image: url(../../images/common/songkran2024-pm/box-mobile-art.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    user-select: none;
+    pointer-events: none;
+}
+.songkran2024-pm .selected-gift {
+    max-width: 150px;
+}
+.songkran2024-pm .contentButton.default-btn {
+    border-radius: 40px;
+}
+.songkran2024-pm .pm-wrapper h5 {
+    width: fit-content;
+    margin: 0 auto 5px;
+    padding: 10px 40px;
+    background-image: url(../../images/common/songkran2024-pm/sectiontitle-bg.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media screen and (min-width: 375px) {
+    .songkran2024-pm .imageBanner, .songkran2024-pm .pm-container {
+        max-width: 320px;
+   }
+    .songkran2024-pm .pm-wrapper {
+        padding: 25px 20px;
+   }
+}
+@media screen and (min-width: 414px) {
+    .songkran2024-pm .imageBanner, .songkran2024-pm .pm-container {
+        max-width: 370px;
+   }
+    .songkran2024-pm .selected-gift {
+        max-width: 180px;
+   }
+    .songkran2024-pm .pm-wrapper {
+        padding: 25px 30px;
+   }
+    .songkran2024-pm .pm-wrapper h5 {
+        font-size: 1.5em;
+        font-weight: 600;
+   }
+}
+@media screen and (min-width: 575px) {
+    .songkran2024-pm .imageBanner, .songkran2024-pm .pm-container {
+        max-width: 450px;
+   }
+    .songkran2024-pm .pm-wrapper:after {
+        top: -25px;
+        left: -130px;
+        right: -130px;
+        bottom: -35px;
+   }
+    .songkran2024-pm .selected-gift {
+        max-width: 180px;
+   }
+    .songkran2024-pm .pm-wrapper {
+        padding: 45px 50px;
+   }
+    .songkran2024-pm .pm-wrapper h5 {
+        margin: 0 auto 10px;
+        padding: 10px 100px;
+   }
+}
+@media screen and (min-width: 768px) {
+    .songkran2024-pm.mainContent {
+        background-image: url(../../images/common/songkran2024-pm/desktop-bg.jpg);
+   }
+    .songkran2024-pm .imageBanner {
+        max-width: 480px;
+   }
+    .songkran2024-pm .pm-container {
+        max-width: 650px;
+   }
+    .songkran2024-pm .pm-wrapper:after {
+        background-image: url(../../images/common/songkran2024-pm/box-desktop-art.png);
+        top: -75px;
+        left: -150px;
+        right: -150px;
+        bottom: -75px;
+   }
+    .songkran2024-pm .selected-gift {
+        max-width: 200px;
+   }
+    .songkran2024-pm .pm-wrapper {
+        padding: 35px 150px;
+        border: 3px solid #f2e33e;
+        border-radius: 30px;
+   }
+    .songkran2024-pm .pm-wrapper h5 {
+        margin: 0 auto 10px;
+        padding: 10px 70px;
+   }
+    .songkran2024-pm .pm-box-art {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+   }
+    .songkran2024-pm .pac-right-art {
+        right: -230px;
+   }
+    .songkran2024-pm .boa-left-art {
+        left: -240px;
+   }
+}
+@media screen and (min-width: 1200px) {
+    .songkran2024-pm .imageBanner {
+        max-width: 650px;
+   }
+    .songkran2024-pm .pm-container {
+        max-width: 850px;
+   }
+    .songkran2024-pm .selected-gift {
+        max-width: 180px;
+   }
+    .songkran2024-pm .pm-wrapper h5 {
+        margin: 0 auto 10px;
+        padding: 15px 100px;
+   }
+}
+@media screen and (min-width: 1440px) {
+    .songkran2024-pm.mainContent {
+        background-position: center -200px;
+        padding-bottom: 40px;
+   }
+    .songkran2024-pm .pm-wrapper:after {
+        top: -105px;
+        left: -170px;
+        right: -170px;
+        bottom: -115px;
+   }
+    .songkran2024-pm .pm-wrapper {
+        padding: 3px 170px 45px;
+        border: 3px solid #f2e33e;
+        border-radius: 30px;
+   }
+    .songkran2024-pm .selected-gift {
+        max-width: 250px;
+        margin-top: 20px;
+   }
+    .songkran2024-pm .pac-right-art {
+        right: -200px;
+   }
+    .songkran2024-pm .boa-left-art {
+        left: -210px;
+   }
+}
+@media screen and (min-width: 1680px) {
+    .songkran2024-pm .imageBanner {
+        max-width: 750px;
+   }
+    .songkran2024-pm .pm-container {
+        max-width: 850px;
+   }
+    .songkran2024-pm.mainContent {
+        background-position: center -250px;
+        padding-bottom: 40px;
+   }
+    .songkran2024-pm .pm-wrapper:after {
+        top: -105px;
+        left: -170px;
+        right: -170px;
+        bottom: -115px;
+   }
+    .songkran2024-pm .pm-wrapper {
+        padding: 45px 170px 55px;
+        border: 3px solid #f2e33e;
+        border-radius: 30px;
+   }
+    .songkran2024-pm .selected-gift {
+        max-width: 250px;
+        margin-top: 20px;
+   }
+}
