@@ -370,6 +370,10 @@ a {
 }
 
 /* Sample Works */
+.wrapper > #sampleworks {
+  height: auto;
+  padding: 120px 0;
+}
 .works-wrapper {
   display: flex;
   justify-content: center;
