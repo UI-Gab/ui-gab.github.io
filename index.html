@@ -14,17 +14,18 @@
     <!-- jQuery -->
     <script src="vendor/jquery-v3.4.1/jQuery.v3.4.1.js"></script>
     <!-- vendor script -->
-    <script src="vendor/bootstrap-v5.2.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>  
+    <!-- <script src="vendor/bootstrap-v5.2.3/js/bootstrap.bundle.min.js"></script> -->
     <script src="vendor/aos/js/aos.js"></script>
+    
     <!-- vendor css -->
     <link rel="stylesheet" href="vendor/aos/css/aos.css">
-    <link rel="stylesheet" href="vendor/bootstrap-v5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">    
+    <!-- <link rel="stylesheet" href="vendor/bootstrap-v5.2.3/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="css/layout/header.css">
-    <link rel="stylesheet" href="css/layout/footer.css">
-
     <link rel="stylesheet" href="css/style.css">
     <!-- Main js -->
 </head>
@@ -42,25 +43,25 @@
             <div class="offcanvas-body">
                 <ul>
                     <li>
-                        <a href="#banner">Profile</a>
+                        <a href="#banner" onclick="$('#offcanvasExample').offcanvas('hide')">Profile</a>
                     </li>
                     <li>
-                        <a href="#experience">Professional Experience</a>
+                        <a href="#experience" onclick="$('#offcanvasExample').offcanvas('hide')">Professional Experience</a>
                     </li>
                     <li>
-                        <a href="#tools">Tools and Technologies</a>
+                        <a href="#tools" onclick="$('#offcanvasExample').offcanvas('hide')">Tools and Technologies</a>
                     </li>
                     <li>
-                        <a href="#skills">Skills</a>
+                        <a href="#skills" onclick="$('#offcanvasExample').offcanvas('hide')">Skills</a>
                     </li>
                   <li>
-                        <a href="#sampleworks">Sample Works</a>
+                        <a href="#sampleworks" onclick="$('#offcanvasExample').offcanvas('hide')">Portfolio / Sample Works</a>
                     </li>
                     <li>
-                        <a href="#educ">Education</a>
+                        <a href="#educ" onclick="$('#offcanvasExample').offcanvas('hide')">Education</a>
                     </li>
                     <li>
-                        <a href="#references">References</a>
+                        <a href="#references" onclick="$('#offcanvasExample').offcanvas('hide')">References</a>
                     </li>
                 </ul>
               
@@ -495,18 +496,6 @@
 
 <!-- Modals -->
 <!-- Submit Message Modal -->
-<div class="submitMessage modal fade" id="submitMessageModal" tabindex="-1" role="dialog" aria-labelledby="submitMessageModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-            <span>Submit Form Successful!</span>          
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-</div>
 
 <!-- End of Modals -->
 <script>
