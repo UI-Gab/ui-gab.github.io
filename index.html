@@ -22,369 +22,456 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Main js -->
 </head>
-<body>
-    <!-- main wrapper -->
-    <div class="container-fluid p-0 m-0">
-        <!-- START OF HEADER -->
-        <header>
-            <div class="container p-0">
-                <nav class="navbar navbar-expand-xl px-3">
-                    <a class="logo navbar-brand" href="#">
-                        <img src="images/common/logo.png" alt="logo images">
-                    </a>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    
-                    <div class="offcanvas offcanvas-end flex-row navbar-collapse justify-content-end" id="navbarSupportedContent" data-bs-scroll="true" data-bs-backdrop="false">
-                        <ul class="navbar-nav offcanvas-body">
-
-                            <li class="nav-item">
-                                <button type="button" class="btn livechat-btn">24/7 LIVE CHAT</button>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="text-light nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="lang lang-th"></span> <span class="lang-text">Language</span>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href=""><span class="lang-th"></span>ภาษาไทย</a>
-                                </div>
-                            </li>                            
-                        </ul>
-                    </div>
-                </nav>
+<body>    
+    <!-- START OF HEADER -->    
+        <button class="menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-        </header>
-        <!-- END OF HEADER -->
-        
-        <div class="mainContent songkran2024">
-        
-            <!-- START BANNER -->
-            <section class="mainBanner">
-                <div class="imageBanner">
-                    <img src="images/common/mainbanner.png" alt="Banner Image" class="img-resposive" data-aos="zoom-in">
-                </div>
-                <div class="textBanner" data-aos="fade-left">
-                    <h1>ฉลองเทศกาลสงกรานต์ กับ <img src="images/common/banner-12betlogo.png" alt=""> ครบรอบ 15 ปี</h1>
-                    <img src="images/common/banner-title-mobile.png" alt="" class="banner-title-mobile">
-                    <img src="images/common/banner-title-desktop.png" alt="" class="banner-title-desktop">
-                    <div>
-                        <p>ลุ้นรับตั๋วชมมวย</p>
-                        <p>ไฟต์ถล่มโลก นัดประวัติศาสตร์</p>
-                    </div>
-                    <div class="banner-prize">
-                        <p>Iphone 15 Promo Max, Galaxy S24 Ultra</p>
-                        <p>นาฬิกา การ์มิน Venu 3, สร้อยคอทองคำ </p>
-                        <p>และเครดิตฟรี!</p>
-                    </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li>
+                        <a href="#banner">Profile</a>
+                    </li>
+                    <li>
+                        <a href="#experience">Professional Experience</a>
+                    </li>
+                    <li>
+                        <a href="#tools">Tools and Technologies</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                  <li>
+                        <a href="#sampleworks">Sample Works</a>
+                    </li>
+                    <li>
+                        <a href="#educ">Education</a>
+                    </li>
+                    <li>
+                        <a href="#references">References</a>
+                    </li>
+                </ul>
+              
+              <div class="offcanvas-contacts">
+                <a href="mailto:marc_898@yahoo.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                <a href="tel:+639062097598" target="_blank"><i class="fa-solid fa-mobile-screen-button"></i></a>
+                <a href="https://www.linkedin.com/in/marcmacayan/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.dropbox.com/scl/fi/6e7bocvtt3ncer3ndj1oe/marcmacayan-2025cv.pdf?rlkey=6a47mmvbyumcf2m2sw2tjwd3p&st=t32yrg3p&dl=1" target="_blank"><i class="fa-solid fa-download"></i></a>
+                
+              </div>
+                
+            </div>
+        </div>
+  
+  <div class="desktop-header">
+    <div class="desktop-header-wrapper">
+      <ul>
+        <li>
+            <a href="#banner">Profile</a>
+        </li>
+        <li>
+            <a href="#experience">Professional Experience</a>
+        </li>
+        <li>
+            <a href="#tools">Tools and Technologies</a>
+        </li>
+        <li>
+            <a href="#skills">Skills</a>
+        </li>
+      <li>
+            <a href="#sampleworks">Sample Works</a>
+        </li>
+        <li>
+            <a href="#educ">Education</a>
+        </li>
+        <li>
+            <a href="#references">References</a>
+        </li>
+  </ul>
+      </div>
+  </div>
+    <!-- END OF HEADER -->
 
-                </div>
-                <div class="buttonBanner">
-                    <a href="###" class="btn default-btn contentButton">สมัครสมาชิก</a>
-                    <a href="#giftBox" class="btn default-btn contentButton">เลือกกล่องของขวัญ</a>
-                </div>
-            </section>
-            <!-- END BANNER -->
+    <!-- START OF MAIN CONTAINER -->
+    <div class="mainContainer scroll-container">
+        <div class="wrapper">
 
-            <!-- START STEPS -->
-            <section id="steps" class="stepBox" data-aos="zoom-in-up">
-
-                <div class="stepsWrapper">
-                    <div class="">
-                        <img src="images/common/step-1.png" class="stepImages">
+            <!-- Banner Slide -->
+            <div class="slide" id="banner">
+                <div class="main-banner">
+                    <div class="text-banner">
+                        <h1 class="title">MARC <span>MACAYAN</span></h1>
+                        <p class="roles"><i>Web Designer, UI/UX Developer, Creative</i></p>
+                      <p class="short-profile">Seasoned Web Designer with over 14 years of experience specializing in UI/UX development and graphic design. Proven track record of delivering high-quality digital solutions for a diverse portfolio of international clients, including those from Japan, the United States, the United Kingdom, Southeast Asia, and beyond. Adept at collaborating with multicultural teams to create visually compelling and user-centric web experiences.</p>
+                      
+                      <div class="contact-items">
+                        <p class="contacts" title="Email Me"><i class="fa-regular fa-envelope"></i> <a href="mailto:marc_898@yahoo.com" target="_blank">marc_898@yahoo.com</a></p>
+                        <p class="contacts" title="Phone Number"><i class="fa-solid fa-mobile-screen-button"></i> <a href="tel:+639062097598" target="_blank">+639062097598</a></p>
+                      <p class="contacts" title="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/marcmacayan/" target="_blank">LinkedIn Profile</a></p>
+                        <p class="contacts" title="Download CV"><i class="fa-solid fa-download"></i> <a href="https://www.dropbox.com/scl/fi/6e7bocvtt3ncer3ndj1oe/marcmacayan-2025cv.pdf?rlkey=6a47mmvbyumcf2m2sw2tjwd3p&st=t32yrg3p&dl=1" target="_blank">Download CV</a></p>
+                        </div>
                     </div>
-                    <div class="">
-                        <img src="images/common/step-2.png" class="stepImages">
-                    </div>
-                    <div class="">
-                        <img src="images/common/step-3.png" class="stepImages">
+                    <div class="image-banner">
+                        <img src="https://i.imgur.com/2ozV0eI.jpeg" alt="" class="vector" data-aos="flip-left" data-aos-duration="1000">
                     </div>
                 </div>
+                <a class="primary-btn btn-next" href="#experience"><i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+            <!-- End of Banner Slide -->
+          
+          <!-- Professional Experience slide -->
+            <div class="slide" id="experience">
+                <a class="primary-btn btn-prev" href="#banner"><i class="fa-solid fa-arrow-up"></i></a>
 
-                <!-- SLIDER FOR MOBILE VIEW -->
-                <div id="stepBoxSlider" class="carousel slide stepBox-icons-slider" data-bs-ride="carousel">
+                <h1 class="title" data-aos="fade-right" data-aos-duration="1000">Professional Experience</h1>
+                <img src="images/professional-experience.png" alt="" class="vector vector-experience">
+              
+                <div class="accordion accordionExperience" id="accordionExperience" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button heading" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <div class="accordion-button-container">
+                            <span>Web Designer (UI)</span>
+                            <span>Pacific Sea BPO Services Inc.</span>
+                            <span>(June 2019 - November 2024)</span>
+                          </div>  
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExperience">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Worked efficiently with development teams from both the Philippines and Taiwan  to ensure project alignment and timely delivery </li>
+                                <li>Led the team in successfully delivering UI tasks from slicing PSD files, creating mockups, and coding of static websites, and ensuring responsiveness across all devices.</li>
+                                <li>Coordinated with cross-functional teams to slice, code, and deliver monthly newsletter campaign materials</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button heading collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <div class="accordion-button-container">
+                            <span>Senior Lead Developer</span>
+                            <span>Transcosmos Asia Philippines</span>
+                            <span>(February 2015 - April 2019)</span>
+                          </div>  
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExperience">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Worked closely with local and international teams to redesign and launch websites like Hobbylink Japan, Sixpad,  & Maho Nabe. </li>
+                                <li>Oversaw task planning, effort estimation, and on-time delivery of frontend development for Magento 1 and 2 websites</li>
+                                <li>Provided onboarding and technical training on frontend development tools, workflows, and best practices</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button heading collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <div class="accordion-button-container">
+                            <span>Senior Web Designer / UI Developer</span>
+                            <span>PFSWEB Philippine Services, LLC</span>
+                            <span>(October 2011 - December 2014)</span>
+                          </div>
+                        </button> 
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExperience">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Took charge in the implementation of a  Responsive web design for the Starbucks International websites. Handled the steady state phase as well.</li>
+                                <li>Worked with different teams to launch websites for P&G Employee shop and Starbucks International.</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button heading collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="accordion-button-container">
+                              <span>Web & Graphic Designer</span>
+                              <span>eCost Philippine Services, LLC</span>
+                              <span>(March 2007 - October 2011)</span>
+                            </div>
+                          </button> 
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExperience">
+                          <div class="accordion-body">
+                              <ul>
+                                  <li>Took the lead in creating Marketing materials (e-mail graphics, banners) that are sent to subscribers.</li>
+                                  <li>Worked with Product managers for special marketing campaigns and took charge in conceptualizingand creating the needed graphic content (Banners, showcases, marketing materials).</li>
+                              </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+                <a class="primary-btn btn-next" href="#tools"><i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+            <!-- End of Professional Experience slide -->
+          
+          <!-- Tools slide -->
+          <div class="slide" id="tools">
+            <a class="primary-btn btn-prev" href="#experience"><i class="fa-solid fa-arrow-up"></i></a>
+
+            <h1 class="title" data-aos="fade-right" data-aos-duration="1000">Tools and Technologies</h1>
+            <img src="https://i.imgur.com/w07mREQ.png" class="vector vector-skills" data-aos="fade-left" data-aos-duration="1000">
+            <div class="tools-content">
+              
+              <div class="tools-item">
+                <span data-aos="fade-right">HTML5 / CSS3</span>
+                <div class="tools-rating" data-aos="fade-left">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                </div>
+              </div>
+              
+              <div class="tools-item">
+                <span data-aos="fade-right">Bootstrap</span>
+                <div class="tools-rating" data-aos="fade-left">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                </div>
+              </div>
+              
+              <div class="tools-item">
+                <span data-aos="fade-right">Photoshop</span>
+                <div class="tools-rating" data-aos="fade-left">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                </div>
+              </div>
+              
+              <div class="tools-item">
+                <span data-aos="fade-right">GIT</span>
+                <div class="tools-rating" data-aos="fade-left">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-regular fa-circle"></i>
+                  <i class="fa-regular fa-circle"></i>
+                </div>
+              </div>
+              
+              <div class="tools-item">
+                <span data-aos="fade-right">Wordpress</span>
+                <div class="tools-rating" data-aos="fade-left">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-regular fa-circle"></i>
+                </div>
+              </div>
+              
+              <div class="tools-item">
+                <span data-aos="fade-right">JS / JQuery</span>
+                <div class="tools-rating" data-aos="fade-left">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-regular fa-circle"></i>
+                  <i class="fa-regular fa-circle"></i>
+                </div>
+              </div>
+              
+              <div class="tools-item">
+                <span data-aos="fade-right">Figma</span>
+                <div class="tools-rating" data-aos="fade-left">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-regular fa-circle"></i>
+                </div>
+              </div>
+              
+            </div>
+                
+            <a class="primary-btn btn-next" href="#skills"><i class="fa-solid fa-arrow-down"></i></a>
+          </div>
+          <!-- End of Tools slide -->
+
+            
+
+            <!-- Skill slide -->
+            <div class="slide" id="skills">
+                <a class="primary-btn btn-prev" href="#tools"><i class="fa-solid fa-arrow-up"></i></a>
+
+                <h1 class="title" data-aos="fade-right" data-aos-duration="1000">Skills</h1>
+
+                <img src="https://i.imgur.com/CZXq6ws.png" alt="" class="vector vector-skills" data-aos="fade-left" data-aos-duration="1000">
+                <div class="card" data-aos="flip-left" data-aos-duration="1000">     
+                    <ul>
+                        <li>UI / UX</li>
+                        <li>Responsive Web Design</li>
+                        <li>Graphic / Visual Design</li>
+                        <li>Goal-Oriented Leadership</li>
+                        <li>Exceptional Communication Skills</li>
+                        <li>Flexibility and Adaptability</li>
+                        <li>Able to quickly grasp new concepts</li>
+                    </ul>
+                </div>  
+
+                <a class="primary-btn btn-next" href="#sampleworks"><i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+            <!-- End of skill slide -->
+          
+          
+          <!-- Sample Works -->
+            <div class="slide" id="sampleworks">
+              <a class="primary-btn btn-prev" href="#skills"><i class="fa-solid fa-arrow-up"></i></a>
+              <h1 class="title" data-aos="fade-right" data-aos-duration="1000">Sample Works</h1>
+              <div class="works-wrapper">
+                <div class="works-item">
+                  <a href="https://codepen.io/UI-Gab/full/dyxoNKe" target="_blank">
+                    <img src="https://i.imgur.com/E8MYGuf.jpeg" class="works-image" data-aos="flip-left" data-aos-duration="1000">
+                    <span>Sample Coffee Shop Website</span>
+                  </a>
+                </div>
+                <div class="works-item">
+                  <a href="https://codepen.io/UI-Gab/full/NWmgzEa" target="_blank">
+                    <img src="https://i.imgur.com/RPO48nH.jpeg" class="works-image" data-aos="flip-left" data-aos-duration="1000">
+                    <span>Sample Notification Center layout</span>
+                  </a>
+                </div>
+                <div class="works-item">
+                  <a href="https://codepen.io/UI-Gab/full/WNaXYQE" target="_blank">
+                    <img src="https://i.imgur.com/L5UVzuN.jpeg" class="works-image" data-aos="flip-left" data-aos-duration="1000">
+                    <span>Sample UI for FAQ</span>
+                  </a>
+                </div>
+                <div class="works-item">
+                  <a href="https://codepen.io/UI-Gab/full/oNaVjja" target="_blank">
+                    <img src="https://i.imgur.com/CLjBaDj.jpeg" class="works-image" data-aos="flip-left" data-aos-duration="1000">
+                    <span>Sample UI for Login/Sign Up</span>
+                  </a>
+                </div>   
+                
+                <div class="works-item">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">                    
+                    <span>12BET Page</span>
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Modal -->
+                  
+                </div>  
+                  
+              </div>
+              
+              <a class="primary-btn btn-next" href="#educ"><i class="fa-solid fa-arrow-down"></i></a>
+              
+            </div>
+            <!-- End of Sample works -->
+          
+          
+          <!-- Educ Slide -->
+            <div class="slide educ" id="educ">
+                <a class="primary-btn btn-prev" href="#sampleworks"><i class="fa-solid fa-arrow-up"></i></a>
+
+                <h1 class="title" data-aos="fade-right" data-aos-duration="1000">EDUCATION</h1>              
+                <img src="https://i.imgur.com/IMjopfj.png" alt="" class="vector vector-education" data-aos="fade-left" data-aos-duration="1000">
+              
+                <div id="educationCarousel" class="carousel slide">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#stepBoxSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#stepBoxSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#stepBoxSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#educationCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#educationCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="3000">
-                            <img src="images/common/step-1.png" class="stepImages">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img src="images/common/step-2.png" class="stepImages">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img src="images/common/step-3.png" class="stepImages">
-                        </div>
+
+                      <div class="carousel-item active">
+                        <div class="card" data-aos="flip-left" data-aos-duration="1000">     
+                            <h2 class="heading">De La Salle - College of St. Benilde</h2>
+                            <p>Bachelor of Science in Business Administration, Major in Information Services Management <span>(2002-2006)</span></p>
+                        </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card" data-aos="flip-left" data-aos-duration="1000">     
+                            <h2 class="heading">San Beda College</h2>
+                            <p>Secondary Education <span>(1998-2002)</span></p>
+                        </div>  
+                      </div>
+
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#stepBoxSlider" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#educationCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#stepBoxSlider" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                    <button class="carousel-control-next" type="button" data-bs-target="#educationCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
                     </button>
-                </div>
-                <!-- END OF SLIDER FOR MOBILE VIEW -->                
-            </section>
-            <!-- END STEPS -->
+                  </div>               
+                    
+                <a class="primary-btn btn-next" href="#references"><i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+            <!-- End of Educ Slide -->
+            
 
-            <!-- START HOW TO LIST -->
-            <section class="howTo" data-aos="fade-right">
-                <div class="howTo-wrapper">
-                    <div class="sectionTitle-wrapper">
-                        <h1 class="sectionTitle">วิธีรับของขวัญสุดพิเศษ</h1>
-                        <h1 class="sectionTitle">เนื่องในโอกาสเทศกาลสงกรานต์</h1>
-                    </div>
-                    <ol>
-                        <li>ฝากเงินสะสม 12,000บาท ขึ้นไป ภายในระยะเวลาโปรโมชั่นเพื่อรับรหัสผ่าน</li>
-                        <li>เลือ<span class="highlight">กกล่องของขวัญ</span></li>
-                        <li>ดาวน์โหลดไฟล์และเก็บไว้</li>
-                        <li>รับรหัสดูของขวัญ ในวันที่ 15 เมษายน 2567 เพื่อเปิดดู <span class="highlight">ของขวัญสงกรานต์</span> ของคุณ!</li>
-                    </ol>
-                </div>
-            </section>
-            <!-- END HOW TO LIST -->
+            <!-- References slide -->
+            <div class="slide" id="references">
+                <a class="primary-btn btn-prev" href="#educ"><i class="fa-solid fa-arrow-up"></i></a>
 
-            <!-- LUCKY DRAW -->
-            <section class="luckyDrawPrize" data-aos="flip-right">
-                <div class="luckyDrawPrize-wrapper">
-                    <h1 class="sectionTitle">รางวัลจับฉลากผู้โชคดี</h1>
-                    <p>ทุกๆ ยอดฝากครบ <span>100 บาท</span></p>
-                    <p>รับตั๋วจับฉลากรางวัล ยิ่งมีตั๋วมากยิ่งมีโอกาสได้ลุ้นรางวัล!</p>
+                <h1 class="title" data-aos="fade-right" data-aos-duration="1000">References</h1>
 
-                    <div class="table-wrapper">
-                        <div class="table">
-                            <div class="tr">
-                                <p class="th">รางวัล</p>
-                                <p class="th">จำนวน</p>
-                            </div>
-                            <div class="tr">
-                                <p class="td">ตั๋วดูมวยคู่หยุดโลก</p>
-                                <p class="td">10</p>
-                            </div>
-                            <div class="tr">
-                                <p class="td">โทรศัพท์ Iphone 15 Promo Max</p>
-                                <p class="td">2</p>
-                            </div>
-                            <div class="tr">
-                                <p class="td">โทรศัพท์ Galaxy S24 Ultra</p>
-                                <p class="td">2</p>
-                            </div>
-                            <div class="tr">
-                                <p class="td">นาฬิกา การ์มิน Venu 3</p>
-                                <p class="td">2</p>
-                            </div>
-                            <div class="tr">
-                                <p class="td">สร้อยคอทองคำ 1 สลึง</p>
-                                <p class="td">4</p>
-                            </div>
-                            <div class="tr">
-                                <p class="td">เครดิตฟรี 1,280 บาท</p>
-                                <p class="td">100</p>
-                            </div>
-                        </div>
-                    </div>
+                <img src="https://i.imgur.com/U9fSg8h.png" alt="" class="vector vector-skills" data-aos="fade-left" data-aos-duration="1000">
+                <div class="card reference-item" data-aos="flip-left" data-aos-duration="1000">     
+                    <h2 class="heading">Marcial Wayan</h1>
+                    <p>Relationship: Former Digital Marketing Manager</p>
+                    <p>Mobile: +63917 8857164</p>
+                    <p>Email: marcialwayan@gmail.com</p>
+                </div>  
+              
+              <div class="card reference-item" data-aos="flip-left" data-aos-duration="1000">     
+                    <h2 class="heading">Kenneth Mendaño</h1>
+                    <p>Relationship: Former UI Team Member</p>
+                    <p>Mobile: +63955 3785636</p>
+                    <p>Email: kenjimendano@gmail.com</p>
+                </div>  
 
-                    <p>***การันตี ตั๋วดูมวยคู่หยุดโลกฟรี 1 ท่าน ที่สะสมตั๋วจับฉลากได้มากที่สุด</p>
-                    <p>ในระยะเวลาโปรโมชั่น <span>10 มีนาคม ถึง 10 เมษายน 2567</span></p>
-                </div>
-            </section>
-            <!-- LUCKY DRAW -->
+                <a class="primary-btn btn-next" href="#banner"><i class="fa-solid fa-arrow-up"></i> Back to Top</a>
+            </div>
+            <!-- End of References slide -->
 
-            <!-- GIFT BOX -->
-            <section class="giftBox" id="giftBox">
-                <div class="giftBox-wrapper" data-aos="flip-left">
-                    <h1 class="sectionTitle">ทุกกล่องของขวัญสงกรานต์มีรางวัล!</h1>
-                    <div class="giftBox-content">
-
-
-                            <div class="select-gift-group">
-                                <div>
-                                    <input type="radio" id="select-gift-group-1" name="select-gift-group" class="select-radio">
-                                    <label for="select-gift-group-1" class="gift-label"><img src="images/common/gifts/gift-1.png" alt=""></label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="select-gift-group-2" name="select-gift-group" class="select-radio">
-                                    <label for="select-gift-group-2" class="gift-label"><img src="images/common/gifts/gift-2.png" alt=""></label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="select-gift-group-3" name="select-gift-group" class="select-radio">
-                                    <label for="select-gift-group-3" class="gift-label"><img src="images/common/gifts/gift-3.png" alt=""></label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="select-gift-group-4" name="select-gift-group" class="select-radio">
-                                    <label for="select-gift-group-4" class="gift-label"><img src="images/common/gifts/gift-4.png" alt=""></label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="select-gift-group-5" name="select-gift-group" class="select-radio">
-                                    <label for="select-gift-group-5" class="gift-label"><img src="images/common/gifts/gift-5.png" alt=""></label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="select-gift-group-6" name="select-gift-group" class="select-radio">
-                                    <label for="select-gift-group-6" class="gift-label"><img src="images/common/gifts/gift-6.png" alt=""></label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="select-gift-group-7" name="select-gift-group" class="select-radio">
-                                    <label for="select-gift-group-7" class="gift-label"><img src="images/common/gifts/gift-7.png" alt=""></label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="select-gift-group-8" name="select-gift-group" class="select-radio">
-                                    <label for="select-gift-group-8" class="gift-label"><img src="images/common/gifts/gift-8.png" alt=""></label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="select-gift-group-9" name="select-gift-group" class="select-radio">
-                                    <label for="select-gift-group-9" class="gift-label"><img src="images/common/gifts/gift-9.png" alt=""></label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="select-gift-group-10" name="select-gift-group" class="select-radio">
-                                    <label for="select-gift-group-10" class="gift-label"><img src="images/common/gifts/gift-10.png" alt=""></label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="select-gift-group-11" name="select-gift-group" class="select-radio">
-                                    <label for="select-gift-group-11" class="gift-label"><img src="images/common/gifts/gift-11.png" alt=""></label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="select-gift-group-12" name="select-gift-group" class="select-radio">
-                                    <label for="select-gift-group-12" class="gift-label"><img src="images/common/gifts/gift-12.png" alt=""></label>
-                                </div>
-                            </div>
-
-                    </div>
-                </div>
-            </section>
-            <!-- GIFT BOX -->
-
-            <!-- START FORM -->
-            <section id="participate" class="formsection">
-                <div class="container">
-                    <form data-aos="flip-right">
-                        <div class="form-group row">
-                            <div class="formLabel d-none">
-                                <label for="12BET USERNAME *">12BET ยูสเซอร์เนม*</label>
-                            </div>
-                            <div class="forminput form-floating">
-                                <input type="text" name="fname" placeholder="12BET USERNAME*" class="form-control" id="floatingInput">
-                                <label for="floatingInput">12BET ยูสเซอร์เนม*</label>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="formLabel d-none">
-                                <label for="12BET USERNAME *">SELECT CURRENCY *</label>
-                            </div>
-                            <div class="forminput">
-                                <select name="currency" id="" class="form-select">
-                                    <option value="" disabled selected>SELECT CURRENCY *</option>
-                                    <option value="">THB</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group row ">
-                            <div class="formLabel d-none">
-                                <label for="captcha">กรอกรหัสCAPTCHA</label>
-                            </div>
-                            <div class="forminput">
-                                <div class="image d-flex align-items-center">
-                                    <img class="for_captcha" src="images/common/captcha.png">
-                                    <button type="button" class="btn refresh-btn text-center">
-                                        <img src="images/common/refresh-btn.png" alt="" class="w-75 mx-auto my-0 d-block">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row ">
-                            <div class="formLabel d-none">
-                                <label for="fillcaptcha">กรอกรหัสCAPTCHA</label>
-                            </div>
-                            <div class="forminput form-floating">
-                                <input type="hidden" class="encrypted_captcha" id="encrypted_captcha" name="encrypted_captcha" value="049cc3b9f5c6f98f981952e62794ea99">
-                                <input id="verify" placeholder="กรอกรหัสCAPTCHA" class="form-control">
-                                <label for="verify">กรอกรหัสCAPTCHA</label>
-                            </div>
-                        </div>
-                        <div class="formButton">
-                            <!-- Button trigger modal -->
-                            <a href="###" class="btn default-btn contentButton" data-bs-toggle="modal" data-bs-target="#submitMessageModal">ส่งมอบ!</a>
-                            <a href="###" class="btn default-btn contentButton">ดาวน์โหลดไฟล์ </a>
-                        </div>
-                    </form>
-                </div>
-            </section>
-            <!-- END FORM -->
-
-            <!-- START TNC -->
-            <section class="tncSection">
-                <div class="container p-0">
-                    <a class="tnc-btn" data-bs-toggle="collapse" href="#termsandconditions" role="button" aria-expanded="true" aria-controls="collapseExample">
-                        <span class="sectionTitle">+ ข้อตกลงและเงื่อนไข</span>
-                    </a>
-                    <div class="collapse " id="termsandconditions">
-                        <div class="tnc">
-                            <ol class="">
-                                <li>โปรโมชั่นนี้สำหรับสมาชิกทุกคนที่ใช้สกุลเงินไทยบาท</li>
-                                <li>โปรโมชั่นเริ่ม เวลา 00:00:00 น. (GMT+8) ของวันที่ 10 มีนาคม 2567 ถึง เวลา 23:59:59 น. (GMT+8) ของวันที่ 10 เมษายน 2567</li>
-                                <li>สมาชิกที่ฝากเงินสะสม 12,000 บาท ขึ้นไปในช่วงระยะเวลาโปรโมชั่นจะมีสิทธิ์ได้รับ กล่องของขวัญสงกรานต์ </li>
-                                <li>สมาชิกแต่ละท่านสามารถรับกล่องของขวัญสงกรานต์ ได้เพียงหนึ่งกล่องเท่านั้น และไม่สามารถเปลี่ยนแปลงได้</li>
-                                <li>รางวัลทั้งหมดจะประกาศเเละปรับโบนัสภายในวันที่ 15 เมษายน 2567 สมาชิกจะได้รับรหัสผ่านในกล่องข้อความของ 12BET</li>
-                                <li>รางวัลเงินเดิมพันฟรี มีเทิร์นโอเวอร์ 1 เท่าในผลิตภัณฑ์ใดก็ได้ของ 12BET ก่อนที่จะทำการถอนเงิน หรือภายใน 30 วันนับจากวันปรับโบนัส</li>
-                                <li>ผู้มีสิทธิ์ได้รับการจับฉลากของขวัญสุดพิเศษฉลองเทศกาลสงกรานต์และครบรอบ 15 ปี ของ 12BET ต้องฝากเงินอย่างน้อย 100 บาทและลงทะเบียนเข้าร่วมโปรโมชั่น</li>
-                                <li>คณะกรรมการอิสระจะทำการสุ่มจับรางวัลเพื่อหาผู้โชคดี จากสมาชิกที่ลงทะเบียน เข้าร่วมโปรโมชั่น</li>
-                                <li>ของรางวัลสามารถเปลี่ยนเป็นเงินเดิมพันฟรีได้ จำนวน 70% จากราคาของรางวัล ยกเว้นตั๋วดูมวย หากสมาชิกไม่สามารถเดินทางไปชมการชกมวยได้ ตั๋วดูมวยจะนำมาจับฉลากใหม่เพื่อค้นหาผู้โชคดีคนต่อไป</li>
-                                <li>รางวัลการันตีตั๋วดูมวย 1 ใบ สำหรับท่านที่สะสมตั๋วจับฉลากได้มากที่สุด หากตั๋วจับฉลากมีจำนวนเท่ากันมากกว่า 1 ท่านขึ้นไป ท่านที่มียอดเทิร์นสูงที่สุดจะได้รับรางวัลนั้น</li>
-                                <li>รางวัลทั้งหมดจะดำเนินการจัดส่งหลังจากติดต่อสมาชิกเรียบร้อยแล้ว เพื่อขอที่อยู่จัดส่งและข้อมูลการติดต่อที่ถูกต้อง</li>
-                                <li>ภาษี ค่าธรรมเนียม และค่าบริการพิเศษเพิ่มเติมในการจัดส่งของรางวัลทั้งหมดถือเป็นความรับผิดชอบของผู้ชนะ แต่เพียงผู้เดียว 12BET จะไม่รับผิดชอบต่อความสูญเสียหรือความเสียหายใดๆ ก็ตามในการจัดส่ง ของรางวัลเนื่องจากข้อมูลที่สมาชิกผู้ชนะให้ไว้ไม่ครบถ้วน/ไม่ถูกต้อง</li>
-                                <li>ผู้เข้าร่วมกิจกรรมที่มีหลายยูสเซอร์ที่ลงทะเบียนในสถานที่เดียวกันและ/หรือที่อยู่ IP เดียวกัน จะถูกตัดสิทธิ์จากการจับฉลากรางวัลโดยอัตโนมัติ</li>
-                                <li>12BET ขอสงวนสิทธิ์ในการยกเลิกและ/หรือแก้ไขโปรโมชั่นนี้ได้ตลอดเวลา ทั้งสำหรับผู้เล่นทั้งหมดหรือผู้เล่นบางท่าน</li>
-                                <li>ข้อกำหนดเงื่อนไขและกติกามาตราฐาน ของ <a href="">12BET เป็นหลักในการตัดสินและบังคับใช้</a></li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- TNC END -->
-        </div>
-
-        <!-- footer -->
-        <div class="footer-container container-fluid m-0 text-center">
-            <footer class="footer">
-                <div class="text-center sponsors-logo mx-auto">
-                    <a href="###" target="_blank">
-                        <img class="" src="images/common/football-club.png">
-                    </a>
-                    <a href="###" target="_blank">
-                        <img class="" src="images/common/power-50.png">
-                    </a>
-                    <a href="###" target="_blank">
-                        <img class="" src="images/common/rank/en.png">
-                    </a>
-                    <a href="###" target="_blank">
-                        <img class="" src="images/common/leeds-logo.png">
-                    </a>
-                </div>
-                <a href="###" target="_blank">
-                    <img src="images/common/12bet-logo.jpg" alt="12bet-logo" class="footerhide" width="100">
-                </a>
-                <a href="###" target="_blank">
-                    <img src="images/common/12betcasino-logo.jpg" alt="12betcasino-logo" class="footerhide" width="120">
-                </a>
-                <a href="###" target="_blank">
-                    <img src="images/common/12betnumbergame-logo.jpg" alt="12betnumbergame-logo" class="footerhide" width="140">
-                </a>
-                <p class="mx-auto mb-0 text-light mt-2">
-                    Copyright © 2024 | 12BET.All Rights Reserved | 21+
-                </p>
-            </footer>
-        </div>
-        <!-- footer -->
+          <div>       
     </div>
-    <!-- main wrapper -->
+    <!-- END OF MAIN CONTAINER -->
 </body>
+
 
 <!-- Modals -->
 <!-- Submit Message Modal -->
