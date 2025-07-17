@@ -1,0 +1,679 @@
+.songkran2024.mainContent {
+    padding: 0;
+    background-image: url(../../images/common/bg-mobile.png);
+    background-position: center -50px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.songkran2024 .default-btn {
+    border-radius: 40px;
+}
+
+/* Banner Section*/
+.songkran2024 .mainBanner {
+    text-align: center;
+    padding: 0;
+    margin: 30px auto 0;
+}
+
+.songkran2024 .imageBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center -30px;
+}
+
+.songkran2024 .imageBanner img {
+    width: 115%;
+}
+
+.songkran2024 .textBanner h1 {
+    font-weight: 900;
+}
+
+.songkran2024 .textBanner h1:nth-child(1) {
+    width: 100%;
+    max-width: 340px;
+    margin: 0px auto 20px;
+}
+
+.songkran2024 .textBanner h1 img {
+    height: 20px;
+}
+
+.songkran2024 .textBanner .banner-title-mobile {
+    width: 70%;
+    margin: 20px auto;
+}
+.songkran2024 .textBanner .banner-title-desktop {
+    display: none;
+}
+
+.songkran2024 .textBanner p {
+    margin: 0 auto;
+    line-height: 1.3;
+}
+
+.songkran2024 .textBanner .banner-prize {
+    margin: 20px auto;
+    color: #91f9f8;
+}
+
+.songkran2024 .buttonBanner a {
+    border-radius: 40px;
+}
+
+/* Steps Section */
+.songkran2024 .stepBox {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.songkran2024 .stepBox p {
+    margin: 40px 0 20px;
+    text-transform: uppercase;
+}
+
+.songkran2024 .stepBox .stepsWrapper {
+    display: none;
+    margin: 50px auto;
+}
+
+.songkran2024 .stepBox .stepsWrapper > div {
+    width: 33.3%;
+}
+
+.songkran2024 .stepBox .stepBox-icons-slider {
+    display: block;
+}
+
+.songkran2024 .stepBox .stepBox-icons-slider .carousel-inner {
+    margin: 2rem auto;
+    padding: 2rem 1rem 0;
+}
+
+.songkran2024 .stepBox .stepBox-icons-slider .carousel-indicators {
+    bottom: -30px;
+    display: none;
+}
+
+.songkran2024 .stepBox img.stepImages {
+    width: 60%;
+    max-width: 250px;
+} 
+
+
+/* HOW TO */
+.songkran2024 .howTo {
+    padding: 0;
+}
+.songkran2024 .howTo .howTo-wrapper {
+    background-image: url(../../images/common/howto-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 230%;
+    padding: 20px 10px;
+}
+.songkran2024 .howTo-wrapper .sectionTitle-wrapper {
+    background-image: url(../../images/common/howto-title-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px auto;
+    padding: 10px 0;
+}
+.songkran2024 .howTo-wrapper h1 {
+    margin: 0 auto;
+    font-weight: 900;
+    color: #f2e33e;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+/* LUCKY DRAW */
+.songkran2024 .luckyDrawPrize {
+    text-align: center;
+    padding-top: 0;
+}
+.songkran2024 .luckyDrawPrize-wrapper {
+    background-image: url(../../images/common/luckydraw-bg-mobile.png);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    padding-top: 340px;
+    padding-bottom: 120px;
+}
+.songkran2024 .luckyDrawPrize .sectionTitle {
+    color: #d6d94b;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.songkran2024 .luckyDrawPrize p {
+    font-size: .8rem;
+}
+.songkran2024 .luckyDrawPrize p span {
+    color: #23f1b4;
+}
+.songkran2024 .luckyDrawPrize .table {
+    color: #fff;
+    margin: 20px auto 40px;
+}
+.songkran2024 .luckyDrawPrize .table .tr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../images/common/ellipse.png);
+    padding: 10px 0;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center bottom;
+}
+.songkran2024 .luckyDrawPrize .table .tr > *:nth-child(1) {
+    width: 70%;
+}
+.songkran2024 .luckyDrawPrize .table .tr > *:nth-child(2) {
+    width: 30%;
+}
+.songkran2024 .luckyDrawPrize .table .tr .th {
+    color: #23f1b4;
+}
+
+/* SELECT GIFT */
+.songkran2024 .giftBox {
+    padding: 0;
+}
+.songkran2024 .giftBox .sectionTitle {
+    color: #f2e33e;
+    background-image: url(../../images/common/giftBox-title-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding: 30px 0;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+}
+.songkran2024 .giftBox-content {
+    background-color: #001b42;
+    padding: 30px 0px;
+    border: 2px solid #f2e33e;
+    border-radius: 20px;
+    width: 95%;
+    margin: -40px auto 0;
+    z-index: 1;
+    position: relative;
+}
+.songkran2024 .select-gift-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.songkran2024 .select-gift-group .select-radio {
+    display: none;
+}
+
+.songkran2024 .select-gift-group .select-radio + .gift-label {
+    display: block;
+    margin: 0;
+    padding: 5px;
+    filter: brightness(.9) saturate(.9);
+}
+.songkran2024 .select-gift-group .select-radio + .gift-label img {
+    width: 100%;
+    max-width: 150px;
+    cursor: pointer;
+}
+/* State of Gift image when clicked */
+.songkran2024 .select-gift-group .select-radio:checked + .gift-label {
+    filter: brightness(1.3) saturate(1.4);
+}
+.songkran2024 .select-gift-group > div {
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form */
+.songkran2024 .forminput input, 
+.songkran2024  .forminput select,
+.songkran2024 .forminput img.for_captcha {
+    border-radius: 40px;
+    background-color: #fff;
+    height: 43px;
+}
+.songkran2024 .forminput.form-floating > label {
+    color: #408cce;
+}
+.songkran2024 .formsection > .container {
+    background-image: url(../../images/common/form-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 140%;
+    padding: 80px 0;
+}
+.songkran2024 .form-floating>label {
+    top: -7px;
+}
+.songkran2024 .formsection form {
+    width: 85%;
+}
+
+/* TNC */
+.songkran2024 .tncSection {
+    padding-top: 90px;
+    background-image: url(../../images/common/tnc-bg-mobile.png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-position: center top;
+    margin-top: -90px;
+}
+.songkran2024 .tncSection .sectionTitle {
+    color: #f2e33e;
+    background-image: url(../../images/common/tnc-title-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding: 30px 0;
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+}
+
+/* Modal */
+.submitMessage.modal .modal-content {
+    background-color: #122964;
+    color: #f2e33e;
+    box-shadow: none;
+    border: 2px solid #f2e33e;
+    border-radius: 10px;
+}
+
+/* Media Query */
+@media screen and (max-width: 320px) {
+    .songkran2024 .howTo .howTo-wrapper {
+        background-size: 320%;
+    }
+
+    .songkran2024 .luckyDrawPrize-wrapper {
+        background-size: 140%;
+        padding-top: 330px;
+    }
+}
+
+
+@media screen and (min-width: 411px) {
+    .songkran2024 .luckyDrawPrize-wrapper {
+        background-size: 110%;
+    }
+    .songkran2024 .formsection > .container {
+        background-size: 130%;
+    }    
+}
+
+@media screen and (min-width: 480px) {
+    .songkran2024 .howTo .howTo-wrapper {
+        background-size: 190%;
+    }
+    .songkran2024 .howTo-wrapper .sectionTitle-wrapper {
+        background-size: 90%;
+    }
+    .songkran2024 .howTo-wrapper h1 {
+        font-size: 1.5rem;
+    }
+
+    .songkran2024 .luckyDrawPrize-wrapper {
+        background-size: 100%;
+        padding-top: 350px;
+    }
+    .songkran2024 .luckyDrawPrize .sectionTitle {
+        font-size: 1.5rem;
+    }
+    .songkran2024 .luckyDrawPrize p {
+        font-size: 1rem;
+    }
+
+    .songkran2024 .giftBox .sectionTitle {
+        font-size: 1.5rem;
+    }
+
+    .songkran2024 .tncSection .sectionTitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 575px) {
+    .songkran2024 .howTo .howTo-wrapper {
+        background-size: 150%;
+        padding: 20px;
+    }
+    .songkran2024 .luckyDrawPrize-wrapper {
+        padding-top: 460px;
+        padding-bottom: 190px;
+    }
+
+    .songkran2024 .formsection > .container {
+        background-size: 110%;
+        padding: 120px 0;    
+    }
+    .songkran2024 .formsection form {
+        max-width: 450px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .songkran2024.mainContent {
+        background-position: center -80px;
+    }
+    .songkran2024 .mainBanner {
+        margin: 60px auto 0;
+    }
+
+    .songkran2024 .howTo-wrapper .sectionTitle-wrapper {
+        background-size: 65%;
+    }
+    .songkran2024 .howTo .howTo-wrapper {
+        background-size: 105%;
+    }
+
+    .songkran2024 .luckyDrawPrize-wrapper {
+        background-image: url(../../images/common/luckydraw-bg-desktop.png);
+        background-size: 130%;
+        padding: 120px 0 170px;
+    }
+    .songkran2024 .luckyDrawPrize-wrapper .table-wrapper {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .songkran2024 .giftBox .sectionTitle {
+        width: 70%;
+    }
+
+    .songkran2024 .select-gift-group .select-radio + .gift-label img {
+        max-width: 180px;
+    }
+
+    .songkran2024 .formsection > .container {
+        background-size: 100%;
+        padding: 180px 0;
+    }
+
+    .songkran2024 .formsection form {
+        max-width: 650px;
+    }
+      
+}
+
+@media screen and (min-width: 991px) {
+    .songkran2024.mainContent {
+        background-image: url(../../images/common/bg-desktop.jpg);
+    }
+    .songkran2024 .mainBanner {
+        margin: 10px auto 0;
+    }
+    .songkran2024 .imageBanner img {
+        width: 100%;
+        max-width: 790px;
+    }
+    .songkran2024 .textBanner h1:nth-child(1) {
+        max-width: 440px;
+    }
+    .songkran2024 .textBanner .banner-title-mobile {
+        display: none;
+    }
+    .songkran2024 .textBanner .banner-title-desktop {
+        display: block;
+        margin: 30px auto;
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .songkran2024 .stepBox .stepBox-icons-slider {
+        display: none;
+    }
+    .songkran2024 .stepBox .stepsWrapper {
+        display: flex;
+        width: 90%;
+    }  
+    .songkran2024 .stepBox img.stepImages {
+        width: 100%;
+        max-width: 200px;
+        -webkit-transform-origin: top center;
+        transform-origin: top center;
+        -webkit-animation: updown 1s infinite;
+        animation: updown 1s infinite;
+    }
+        
+    @-webkit-keyframes updown {
+        0% {
+            transform: translateY(5%);
+        }
+    
+        50% {
+            transform: translateY(1%);
+        }
+    
+        100% {
+            transform: translateY(5%);
+        }
+    }
+
+
+
+    .songkran2024 .howTo .howTo-wrapper {
+        background-size: 100%;
+        padding: 80px;
+    }
+    .songkran2024 .howTo-wrapper .sectionTitle-wrapper {
+        background-size: 55%;
+    }
+
+    .songkran2024 .luckyDrawPrize-wrapper {
+        background-size: 110%;
+        padding: 160px 0 240px;
+    }
+
+    .songkran2024 .giftBox-content {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .songkran2024 .formsection > .container {
+        background-size: 75%;
+    }
+
+    .songkran2024 .formButton {
+        margin: 40px auto 0;
+    }
+
+    .songkran2024 .tncSection {
+        background-image: url(../../images/common/tnc-bg-desktop.png);
+    }
+    .songkran2024 .tncSection .sectionTitle {
+        background-size: 70%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .songkran2024 .mainBanner {
+        margin: 0px auto 0;
+    }
+    .songkran2024 .imageBanner img {
+        max-width: 970px;
+    }
+
+    .songkran2024 .stepBox .stepsWrapper {
+        max-width: 800px;
+    }
+
+    .songkran2024 .howTo-wrapper .sectionTitle-wrapper {
+        background-size: 50%;
+    }
+    .songkran2024 .howTo-wrapper h1 {
+        font-size: 1.9rem;
+    }
+
+    .songkran2024 .howTo .howTo-wrapper ol {
+        width: 100%;
+        max-width: 650px;
+        margin: 0px auto 0;
+    }
+
+    .songkran2024 .luckyDrawPrize-wrapper {
+        background-size: 100%;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 120px 0 160px;
+    }
+
+    .songkran2024 .luckyDrawPrize .sectionTitle {
+        font-size: 1.9rem;
+    }
+
+    .songkran2024 .giftBox .sectionTitle {
+        font-size: 1.9rem;
+        width: 55%;
+    }
+
+    .songkran2024 .giftBox-content {
+        max-width: 930px;
+    }
+    .songkran2024 .select-gift-group > div {
+        width: 25%;
+    }
+
+    .songkran2024 .formsection > .container {
+        background-size: 65%;
+    }
+
+    .songkran2024 .forminput input, 
+    .songkran2024 .forminput select, 
+    .songkran2024 .forminput img.for_captcha {
+        height: 50px;
+    }
+
+    .songkran2024 .tncSection {
+        margin-top: -90px;
+    }
+
+    .songkran2024 .tncSection .sectionTitle {
+        font-size: 1.9rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1600px) {
+    .songkran2024 .textBanner p {
+        font-size: 2rem;
+    }
+
+    .songkran2024 .stepBox .stepsWrapper {
+        max-width: 870px;
+    }
+
+    .songkran2024 .howTo .howTo-wrapper {
+        padding: 120px;
+    }
+    .songkran2024 .howTo-wrapper .sectionTitle-wrapper {
+        background-size: 40%;
+    }
+    .songkran2024 .howTo .howTo-wrapper ol li {
+        margin: 20px 0;
+    }
+
+    .songkran2024 .luckyDrawPrize-wrapper {
+        max-width: 1200px;
+        padding: 180px 0 230px;
+    }
+
+    .songkran2024 .luckyDrawPrize p {
+        font-size: 1.3rem;
+    }
+
+    .songkran2024 .luckyDrawPrize-wrapper .table-wrapper {
+        max-width: 500px;
+    }
+
+    .songkran2024 .giftBox .sectionTitle {
+        width: 40%;
+    }
+}   
+
+@media screen and (min-width: 1920px) {
+    .songkran2024 .imageBanner img {
+        max-width: 1170px;
+    }
+    .songkran2024 .textBanner .banner-title-desktop {
+        max-width: 950px;
+    }
+    .songkran2024 .buttonBanner a {
+        font-size: 1.6rem;
+        max-width: 310px;
+    }
+
+    .songkran2024 .stepBox .stepsWrapper {
+        max-width: 1010px;
+        margin: 100px auto;
+    }
+    .songkran2024 .stepBox img.stepImages {
+        max-width: 260px;
+    }
+
+    .songkran2024 .howTo-wrapper .sectionTitle-wrapper {
+        background-size: 50%;
+        padding: 20px 0;
+    }
+
+    .songkran2024 .howTo-wrapper h1 {
+        font-size: 2.5rem;
+    }
+
+    .songkran2024 .howTo .howTo-wrapper ol {
+        font-size: 1.7rem;
+    }
+
+    .songkran2024 .luckyDrawPrize-wrapper {
+        max-width: 1500px;
+        padding: 210px 0 230px;
+    }
+    .songkran2024 .luckyDrawPrize .sectionTitle {
+        font-size: 2.5rem;
+    }
+
+    .songkran2024 .luckyDrawPrize .table .tr {
+        padding: 20px 0;
+    }
+
+    .songkran2024 .giftBox .sectionTitle {
+        font-size: 2.5rem;
+    }
+    .songkran2024 .giftBox-content {
+        max-width: 1190px;
+        padding: 50px 30px;
+    }
+
+    .songkran2024 .select-gift-group .select-radio + .gift-label img {
+        max-width: 240px;
+    }
+    
+    .songkran2024 .tncSection .sectionTitle {
+        font-size: 2.5rem;
+    }
+}
