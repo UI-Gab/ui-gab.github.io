@@ -387,7 +387,7 @@ a {
   margin: 10px 5px;
   text-align: center;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 .works-item img {
   width: 100%;
@@ -411,6 +411,14 @@ a {
   padding-left: 10px;
   line-height: 1.2;
   text-align: left;
+}
+.works-item .works-desc span {
+  color: var(--secondary-accent-color);
+}
+.works-item .works-desc a {
+  display: block;
+  width: max-content;
+  margin-top: 10px;
 }
 
 
