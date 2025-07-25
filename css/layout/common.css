@@ -420,6 +420,9 @@ a {
   width: max-content;
   margin-top: 10px;
 }
+.works-item .works-desc a:hover {
+  color: var(--accent-color);
+}
 
 
 /* Buttons */
