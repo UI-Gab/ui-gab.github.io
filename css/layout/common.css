@@ -384,14 +384,14 @@ a {
 .works-item {
   display: flex;
   width: 100%;
-  margin: 10px 5px;
+  margin: 20px 5px;
   text-align: center;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .works-item img {
   width: 100%;
-  max-width: 150px;
   margin-bottom: 15px;
   border-radius: 15px;
   border: 2px solid #000;
@@ -404,13 +404,14 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40%;
+  width: 100%;
 }
 .works-item .works-desc {
-  width: 60%;
+  width: 100%;
   padding-left: 10px;
   line-height: 1.2;
   text-align: left;
+  font-weight: 600;
 }
 .works-item .works-desc span {
   color: var(--secondary-accent-color);
@@ -571,6 +572,35 @@ a {
         font-size: 1.1rem;
         padding: 10px 20px 5px;
     }
+}
+
+/* Portfolio Modals  */
+.modal.portfolio .modal-header {
+  color: #fff;
+  background-color: var(--secondary-accent-color);
+}
+.modal.portfolio .modal-header h1 {
+  font-size: 1rem !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1;
+}
+.modal.portfolio .modal-body {
+  padding: 0;
+}
+.modal.portfolio .folio-modal-img {
+  width: 100%;
+}
+.modal.portfolio .modal-footer {
+  justify-content: center;
+  background-color: var(--secondary-accent-color);
+}
+.modal.portfolio .modal-footer a {
+  color: white;
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: var(--main-background-color);
 }
 
 
