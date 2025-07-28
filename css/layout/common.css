@@ -374,6 +374,9 @@ a {
   height: auto;
   padding: 120px 0;
 }
+.wrapper > .slide > .works-wrapper {
+  max-width: 375px;
+}
 .works-wrapper {
   display: flex;
   justify-content: center;
@@ -405,6 +408,7 @@ a {
   align-items: center;
   justify-content: center;
   width: 100%;
+  cursor: pointer;
 }
 .works-item .works-desc {
   width: 100%;
@@ -576,7 +580,7 @@ a {
 
 /* Portfolio Modals  */
 .modal.portfolio .modal-header {
-  color: #fff;
+  color: var(--main-background-color);
   background-color: var(--secondary-accent-color);
 }
 .modal.portfolio .modal-header h1 {
@@ -584,6 +588,7 @@ a {
   text-transform: uppercase;
   font-weight: 600;
   line-height: 1;
+  font-family: var(--title-font-family);
 }
 .modal.portfolio .modal-body {
   padding: 0;
@@ -618,8 +623,14 @@ a {
   .wrapper > .slide > * {
     max-width: 650px;
   }
-  
-  
+  .wrapper > .slide > .works-wrapper {
+    max-width: 650px;
+    justify-content: space-around;
+  }
+  .works-item {
+    width: 30%;
+    margin: 20px 20px;
+  }  
 
   .main-banner .short-profile {
     line-height: 1.4;
@@ -727,5 +738,9 @@ a {
   
   .image-banner img {
     height: 160px;
+  }
+
+  .modal-dialog-scrollable .modal-content {
+    max-height: 90%;
   }
 }
