@@ -577,13 +577,13 @@ a {
 
 /* Portfolio Modals  */
 .modal.portfolio .modal-header {
-  color: var(--main-background-color);
-  background-color: var(--secondary-accent-color);
+  background-color: var(--main-background-color);
+  color: #fff;
 }
 .modal.portfolio .modal-header h1 {
   font-size: 1rem !important;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: normal;
   line-height: 1;
   font-family: var(--title-font-family);
 }
@@ -595,14 +595,14 @@ a {
 }
 .modal.portfolio .modal-footer {
   justify-content: center;
-  background-color: var(--secondary-accent-color);
+  background-color: var(--main-background-color);
 }
 .modal.portfolio .modal-footer a {
-  color: white;
+  color: #fff;
   font-weight: 600;
   padding: 10px 30px;
   border-radius: 10px;
-  background-color: var(--main-background-color);
+  background-color: var(--secondary-accent-color);
 }
 
 
@@ -625,7 +625,7 @@ a {
   }
   .works-item {
     width: 30%;
-    margin: 20px 0;
+    margin: 20px 20px;
   }  
 
   .main-banner .short-profile {
@@ -698,6 +698,9 @@ a {
   }
   .main-banner .short-profile {
     font-size: 1.1rem;
+  }
+  .modal.portfolio .modal-dialog {
+    max-width: 575px;
   }
 }
 
