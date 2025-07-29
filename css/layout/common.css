@@ -382,7 +382,7 @@ a {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
 }
 .works-item {
   display: flex;
@@ -743,7 +743,7 @@ a {
   }
 
   .wrapper > .slide > .works-wrapper {
-    max-width: 1024px;
+    max-width: 1200px;
   }
   .works-item img {
     max-width: 250px;
