@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Simple Freight Booking Flow</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS & Icons -->
+    <script src="vendor/bootstrap-v5.2.3/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="vendor/bootstrap-v5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- This is the start of the section containing the form -->
+    <section class="freightbooking-process">        
+        <div class="container mt-5">
+            <div class="card shadow p-4">
+                <h3 class="mb-4 text-center">Freight Booking Form</h3>
+                <form id="freightForm" novalidate>
+
+                    <!-- This is the Pickup Location input field -->
+                    <div class="mb-3 position-relative">
+                        <label for="pickup" class="form-label">Pickup Location</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-geo-alt-fill text-danger"></i></span>
+                            <input type="text" class="form-control" id="pickup" name="pickup" placeholder="Enter pickup location" required>
+                        </div>
+                        <div id="pickup-suggestions" class="suggestions" role="listbox"></div>
+                    </div>                    
+
+                    <!-- This is the Drop-off Location input field -->
+                    <div class="mb-3 position-relative">
+                        <label for="dropoff" class="form-label">Drop-off Location</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-geo-alt text-primary"></i></span>
+                            <input type="text" class="form-control" id="dropoff" name="dropoff" placeholder="Enter drop-off location" required>
+                        </div>
+                        <div id="dropoff-suggestions" class="suggestions" role="listbox"></div>
+                    </div>                    
+
+                    <!-- This is the Date Selection field -->
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Pickup Date</label>
+                        <input type="date" class="form-control" id="date" name="date" required>
+                    </div>                    
+
+                    <!-- This is the Vehicle Selection dropdown -->
+                    <div class="mb-3">
+                        <label class="form-label">Select Vehicle</label>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-primary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-truck"></i> Choose a vehicle type
+                            </button>
+                            <ul class="dropdown-menu w-100">
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-truck"></i> Truck</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-car-front"></i> Van</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-bicycle"></i> Motorbike</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- This is the Submit button -->
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">Confirm Booking</button>
+                    </div>
+                </form>
+            </div>
+        </div>        
+    </section>
+    <!-- END FORM -->
+</body>
+
+<!-- This is the script for to Geoapify API for Autocomplete -->
+<script>
+  const apiKey = "82790433b91e43fbb0c879148e4a3edf"; // replace with your key
+
+  function setupAutocomplete(inputId, suggestionsId) {
+    const input = document.getElementById(inputId);
+    const suggestions = document.getElementById(suggestionsId);
+
+    input.addEventListener("input", async () => {
+      const text = input.value;
+      if (text.length < 3) {
+        suggestions.innerHTML = "";
+        return;
+      }
+
+      const url = `https://api.geoapify.com/v1/geocode/autocomplete?text=${encodeURIComponent(text)}&apiKey=${apiKey}`;
+      const response = await fetch(url);
+      const data = await response.json();
+
+      suggestions.innerHTML = "";
+      data.features.forEach(place => {
+        const div = document.createElement("div");
+        div.textContent = place.properties.formatted;
+        div.onclick = () => {
+          input.value = place.properties.formatted;
+          suggestions.innerHTML = "";
+        };
+        suggestions.appendChild(div);
+      });
+    });
+  }
+
+  setupAutocomplete("pickup", "pickup-suggestions");
+  setupAutocomplete("dropoff", "dropoff-suggestions");
+</script>
+</html>
