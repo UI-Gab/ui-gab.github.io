@@ -1,116 +1,122 @@
 .cafe77th.mainContent {
     padding: 0;
-    background-image: url(../../images/common/bg-mobile.png);
-    background-position: center -50px;
-    background-size: 100%;
-    background-repeat: no-repeat;
     overflow: hidden;
 }
 
-p {
-    margin-bottom: 0;
-}
-
-.cafe77th .default-btn {
-    border-radius: 40px;
-}
-
-/* Banner Section*/
-.cafe77th .mainBanner {
-    text-align: center;
-    padding: 0;
-    margin: 30px auto 0;
-}
-
-.cafe77th .imageBanner {
+.cafe77th .main-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center -30px;
 }
 
-.cafe77th .imageBanner img {
-    width: 115%;
-}
-
-.cafe77th .textBanner h1 {
-    font-weight: 900;
-}
-
-.cafe77th .textBanner h1:nth-child(1) {
-    width: 100%;
-    max-width: 340px;
-    margin: 0px auto 20px;
-}
-
-.cafe77th .textBanner h1 img {
-    height: 20px;
-}
-
-.cafe77th .textBanner .banner-title-mobile {
-    width: 70%;
-    margin: 20px auto;
-}
-.cafe77th .textBanner .banner-title-desktop {
-    display: none;
-}
-
-.cafe77th .textBanner p {
-    margin: 0 auto;
-    line-height: 1.3;
-}
-
-.cafe77th .textBanner .banner-prize {
-    margin: 20px auto;
-    color: #91f9f8;
-}
-
-.cafe77th .buttonBanner a {
-    border-radius: 40px;
-}
-
-/* Steps Section */
-.cafe77th .stepBox {
-    text-align: center;
-    width: 100%;
+.cafe77th .nav-links ul {
+    display: flex;
+    list-style: none;
     margin: 0;
-    padding: 0;
+}
+.cafe77th .nav-links ul li {
+    margin: 0 5px;
+    color: #8c3d0f;
 }
 
-.cafe77th .stepBox p {
-    margin: 40px 0 20px;
-    text-transform: uppercase;
+/* Banner Section*/
+.cafe77th .mainbanner {    
+    width: 100%;    
+    background: #FDE8AB;
+    background: radial-gradient(circle, rgba(253, 232, 171, 1) 0%, rgba(217, 177, 102, 1) 100%);    
+    position: relative;
+    padding: 10px 0;
 }
 
-.cafe77th .stepBox .stepsWrapper {
-    display: none;
-    margin: 50px auto;
+.cafe77th .mainbanner-contents {
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+    padding-top: 130px;
 }
 
-.cafe77th .stepBox .stepsWrapper > div {
-    width: 33.3%;
+.cafe77th .mainbanner-image-wrapper {
+    position: absolute;
+    bottom: -50px;
+    left: 10px;
 }
 
-.cafe77th .stepBox .stepBox-icons-slider {
+.cafe77th .mainbanner-image {
+    width: 100%;
+    max-width: 200px;
+}
+
+.cafe77th .mainbanner .mainbanner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40%;
+}
+
+.cafe77th .mainbanner-text h1 {
+    text-align: center;
+    color: #8c3d0f;
+    font-size: 3.6rem;
+    margin: 0;
+    line-height: 0.9;
+}
+
+.cafe77th .mainbanner-text button {
+    margin-top: 20px;
+}
+
+/* Best Sellers */
+.cafe77th .bestsellers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cafe77th .bestsellers-content {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.cafe77th .bestsellers .item {
+    background-color: #f2cf66;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 50px;
+    margin: 15px 0;
+    width: 250px;
+    position: relative;
+}
+
+.cafe77th .bestsellers .item span {
     display: block;
+    line-height: 1;
+}
+.cafe77th .bestsellers .item span.item-price {
+    font-size: 1.3rem;
 }
 
-.cafe77th .stepBox .stepBox-icons-slider .carousel-inner {
-    margin: 2rem auto;
-    padding: 2rem 1rem 0;
+.cafe77th .bestsellers .item .item-image-wrapper {
+    position: absolute;
+    right: 10px;
+    top: -10px;
 }
 
-.cafe77th .stepBox .stepBox-icons-slider .carousel-indicators {
-    bottom: -30px;
-    display: none;
+.cafe77th .bestsellers .item .item-image {
+    width: 100%;
+    max-width: 80px;
 }
 
-.cafe77th .stepBox img.stepImages {
-    width: 60%;
-    max-width: 250px;
-} 
+
+
+
 
 
 /* HOW TO */

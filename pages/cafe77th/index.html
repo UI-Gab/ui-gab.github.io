@@ -26,16 +26,16 @@
     <!-- main wrapper -->
     <div class="container-fluid p-0 m-0">
         <!-- START OF HEADER -->
-        <header>
+        <header class="d-none">
             <div class="container p-0">
-                <nav class="navbar navbar-expand-xl px-3">
-                    
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <nav class="navbar navbar-expand-xl px-3">                  
+                    <button class="navbar-toggler d-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+
+                    
                     
                     <div class="offcanvas offcanvas-end flex-row navbar-collapse justify-content-end" id="navbarSupportedContent" data-bs-scroll="true" data-bs-backdrop="false">
                         <ul class="navbar-nav offcanvas-body">
@@ -58,40 +58,90 @@
         </header>
         <!-- END OF HEADER -->
         
-        <div class="mainContent cafe77th">
+        <div class="mainContent cafe77th">           
         
             <!-- START BANNER -->
-            <section class="mainBanner">
-                <div class="imageBanner">
-                    <img src="images/common/mainbanner.png" alt="Banner Image" class="img-resposive" data-aos="zoom-in">
-                </div>
-                <div class="textBanner" data-aos="fade-left">
-                    <h1>ฉลองเทศกาลสงกรานต์ กับ ครบรอบ 15 ปี</h1>
-                    <img src="images/common/banner-title-mobile.png" alt="" class="banner-title-mobile">
-                    <img src="images/common/banner-title-desktop.png" alt="" class="banner-title-desktop">
-                    <div>
-                        <p>ลุ้นรับตั๋วชมมวย</p>
-                        <p>ไฟต์ถล่มโลก นัดประวัติศาสตร์</p>
+            <section class="mainbanner">
+                <!-- Header -->
+                <div class="container main-header">
+                    <img src="images/common/cafe77th-logo.png" class="header-logo" alt="cafe77thlogo" title="cafe77thlogo">
+                    <div class="nav-links">
+                        <ul>
+                            <li>Home</li>
+                            <li>Menu</li>
+                            <li>Delivery</li>
+                            <li>Location</li>
+                        </ul>
                     </div>
-                    <div class="banner-prize">
-                        <p>Iphone 15 Promo Max, Galaxy S24 Ultra</p>
-                        <p>นาฬิกา การ์มิน Venu 3, สร้อยคอทองคำ </p>
-                        <p>และเครดิตฟรี!</p>
+                </div>             
+                <!-- End of Header -->
+                <!-- Main Banner contents -->
+                <div class="mainbanner-contents">
+                    <div class="mainbanner-image-wrapper">
+                        <img src="images/common/mainbanner-image.png" class="mainbanner-image" alt="mainbanner-image">
                     </div>
-
+                    <div class="mainbanner-text">
+                        <h1>Awaken</h1>
+                        <h1>Your</h1>
+                        <h1>Senses</h1>
+                        <button class="button-dark">Order Now</button>
+                    </div>
                 </div>
-                <div class="buttonBanner">
-                    <a href="###" class="btn default-btn contentButton">สมัครสมาชิก</a>
-                    <a href="#giftBox" class="btn default-btn contentButton">เลือกกล่องของขวัญ</a>
-                </div>
+                <!-- End of Main Banner contents -->              
             </section>
             <!-- END BANNER -->
+
+            <!-- START BESTSELLERS -->
+             <section class="bestsellers">
+                <h1>Our Best Sellers</h1>
+                <div class="bestsellers-content">
+                    <div class="item">
+                        <div class="item-text-wrapper">
+                            <span class="item-name">Spanish Latte</span>
+                            <span class="item-price">140Php</span>
+                        </div>
+                        <div class="item-image-wrapper">
+                            <img src="images/common/product-coffee.png" class="item-image" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-text-wrapper">
+                            <span class="item-name">Spanish Latte</span>
+                            <span class="item-price">140Php</span>
+                        </div>
+                        <div class="item-image-wrapper">
+                            <img src="images/common/product-coffee.png" class="item-image" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-text-wrapper">
+                            <span class="item-name">Spanish Latte</span>
+                            <span class="item-price">140Php</span>
+                        </div>
+                        <div class="item-image-wrapper">
+                            <img src="images/common/product-coffee.png" class="item-image" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-text-wrapper">
+                            <span class="item-name">Spanish Latte</span>
+                            <span class="item-price">140Php</span>
+                        </div>
+                        <div class="item-image-wrapper">
+                            <img src="images/common/product-coffee.png" class="item-image" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <button class="button-dark">View Full Menu</button>
+             </section>
+             <!-- END BESTSELLERS -->
 
 
         </div>
 
         <!-- footer -->
-        <div class="footer-container container-fluid m-0 text-center">
+        <div class="footer-container container-fluid m-0 text-center d-none">
             <footer class="footer">
   
                 <p class="mx-auto mb-0 text-light mt-2">

@@ -1,20 +1,15 @@
 @charset "UTF-8"; 
 
 header {
-	background-color: #8c3b0e;
+	background-color: transparent;
 	text-transform: uppercase;
 }
 
-.logo img {
-	max-width: 100px;
-}
-
-.header-landingpageLog {
-	margin-right: auto;
-}
-
-.header-landingpageLogo img {
-	max-height: 40px;
+.header-logo {
+	width: 100%;
+    max-width: 60px;
+	position: relative;
+    z-index: 1;
 }
 
 .icon-bar {
@@ -24,9 +19,12 @@ header {
 	margin: 0 0 3px 0;
 	border-radius: 10px;
 }
-
+.navbar-toggler {
+	border: none;
+}
 .navbar-toggler:focus {
 	outline: none;
+	box-shadow: none;
 }
 .navbar-nav {
 	align-items: center;

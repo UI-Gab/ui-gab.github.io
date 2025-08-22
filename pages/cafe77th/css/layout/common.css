@@ -1,16 +1,11 @@
 @charset "UTF-8";
 
 :root {
-  --main-background-color: #0c284f;
-  --main-font-family: 'Montserrat', sans-serif;
-  --main-font-color: #fff;
-  --main-notice-color: yellow;
-  --main-input-color: #f8e19e;
-  --main-button-background-color: linear-gradient(to bottom, rgba(204,0,0,1) 0%,rgba(255,51,51,1) 0%,rgba(204,0,0,1) 100%,rgba(255,51,51,1) 100%,rgba(204,0,0,1) 100%);
-  --main-button-font-family: 'Montserrat';
-  --main-modal-font-color: midnightblue;
-  --main-modal-bg-color: lightblue;
-  --weekly-tabs-bg-color: midnightblue;
+  --main-background-color: #fff;
+  --main-header-font-family: 'Tanker', sans-serif;
+  --main-font-family:'Bespoke Serif', serif;
+  --font-color-darkbg: #fff;
+  --font-color-lightbg: #8c3d0f;
 }
 
 html {
@@ -20,7 +15,7 @@ html {
 
 body {
   font-family: var(--main-font-family);
-  color: var(--main-font-color);
+  color: var(--font-color-lightbg);
   background-color: var(--main-background-color);
 }
 
@@ -32,6 +27,19 @@ a,
 
 a:hover {
   text-decoration: none;
+}
+
+h1 {
+  font-family: var(--main-header-font-family);
+}
+
+.button-dark {
+  background-color: #8c3d0f;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
 }
 
 .mainContent {
