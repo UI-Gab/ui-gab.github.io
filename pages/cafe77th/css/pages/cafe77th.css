@@ -184,14 +184,16 @@
     z-index: -1;
 }
 
-.map-container {
+/* MAP */
+.cafe77th .map-container {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-    height: 500px;
+    height: 550px;
+    margin-bottom: 0;
 }
 
-.map-container iframe {
+.cafe77th .map-container iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -200,8 +202,25 @@
     border: 0;
 }
 
+/* Footer */
+.footer {
+    background-color: #8c3d0f;
+    color: #fff;
+}
 
+.footer .footer-logo {
+    filter: brightness(0) invert(1);
+    width: 70px;
+}
 
+.footer h3 {
+    text-align: left;
+}
+.footer ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
 
 
 
@@ -211,73 +230,20 @@
 
 /* Media Query */
 @media screen and (max-width: 320px) {
-    .cafe77th .howTo .howTo-wrapper {
-        background-size: 320%;
-    }
-    .cafe77th .luckyDrawPrize-wrapper {
-        background-size: 140%;
-        padding-top: 330px;
-    }
+
 }
 
 
 @media screen and (min-width: 411px) {
-    .cafe77th .luckyDrawPrize-wrapper {
-        background-size: 110%;
-    }
-    .cafe77th .formsection > .container {
-        background-size: 130%;
-    }    
+ 
 }
 
 @media screen and (min-width: 480px) {
-    .cafe77th .howTo .howTo-wrapper {
-        background-size: 190%;
-    }
-    .cafe77th .howTo-wrapper .sectionTitle-wrapper {
-        background-size: 90%;
-    }
-    .cafe77th .howTo-wrapper h1 {
-        font-size: 1.5rem;
-    }
 
-    .cafe77th .luckyDrawPrize-wrapper {
-        background-size: 100%;
-        padding-top: 350px;
-    }
-    .cafe77th .luckyDrawPrize .sectionTitle {
-        font-size: 1.5rem;
-    }
-    .cafe77th .luckyDrawPrize p {
-        font-size: 1rem;
-    }
-
-    .cafe77th .giftBox .sectionTitle {
-        font-size: 1.5rem;
-    }
-
-    .cafe77th .tncSection .sectionTitle {
-        font-size: 1.5rem;
-    }
 }
 
 @media screen and (min-width: 575px) {
-    .cafe77th .howTo .howTo-wrapper {
-        background-size: 150%;
-        padding: 20px;
-    }
-    .cafe77th .luckyDrawPrize-wrapper {
-        padding-top: 460px;
-        padding-bottom: 190px;
-    }
 
-    .cafe77th .formsection > .container {
-        background-size: 110%;
-        padding: 120px 0;    
-    }
-    .cafe77th .formsection form {
-        max-width: 450px;
-    }
 }
 
 
