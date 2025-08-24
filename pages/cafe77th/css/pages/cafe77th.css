@@ -251,6 +251,21 @@
 }
 
 @media screen and (min-width: 480px) {
+    .cafe77th .mainbanner-image-wrapper {
+        left: 50px;
+    }
+    .cafe77th .mainbanner .mainbanner-text {
+        padding-left: 30%;
+    }
+    .cafe77th .deliveryapps .find {
+        margin: 220px auto 0;
+    }
+    .cafe77th .deliveryapps .foodpanda-mobile {
+        left: 90px;
+    }
+    .cafe77th .deliveryapps .grab-mobile {
+        right: 90px;
+    }
 
 }
 
@@ -260,304 +275,20 @@
 
 
 @media screen and (min-width: 768px) {
-    .cafe77th.mainContent {
-        background-position: center -80px;
-    }
-    .cafe77th .mainBanner {
-        margin: 60px auto 0;
-    }
-
-    .cafe77th .howTo-wrapper .sectionTitle-wrapper {
-        background-size: 65%;
-    }
-    .cafe77th .howTo .howTo-wrapper {
-        background-size: 105%;
-    }
-
-    .cafe77th .luckyDrawPrize-wrapper {
-        background-image: url(../../images/common/luckydraw-bg-desktop.png);
-        background-size: 130%;
-        padding: 120px 0 170px;
-    }
-    .cafe77th .luckyDrawPrize-wrapper .table-wrapper {
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    .cafe77th .giftBox .sectionTitle {
-        width: 70%;
-    }
-
-    .cafe77th .select-gift-group .select-radio + .gift-label img {
-        max-width: 180px;
-    }
-
-    .cafe77th .formsection > .container {
-        background-size: 100%;
-        padding: 180px 0;
-    }
-
-    .cafe77th .formsection form {
-        max-width: 650px;
-    }
       
 }
 
 @media screen and (min-width: 991px) {
-    .cafe77th.mainContent {
-        background-image: url(../../images/common/bg-desktop.jpg);
-    }
-    .cafe77th .mainBanner {
-        margin: 10px auto 0;
-    }
-    .cafe77th .imageBanner img {
-        width: 100%;
-        max-width: 790px;
-    }
-    .cafe77th .textBanner h1:nth-child(1) {
-        max-width: 440px;
-    }
-    .cafe77th .textBanner .banner-title-mobile {
-        display: none;
-    }
-    .cafe77th .textBanner .banner-title-desktop {
-        display: block;
-        margin: 30px auto;
-        width: 100%;
-        max-width: 700px;
-    }
-
-    .cafe77th .stepBox .stepBox-icons-slider {
-        display: none;
-    }
-    .cafe77th .stepBox .stepsWrapper {
-        display: flex;
-        width: 90%;
-    }  
-    .cafe77th .stepBox img.stepImages {
-        width: 100%;
-        max-width: 200px;
-        -webkit-transform-origin: top center;
-        transform-origin: top center;
-        -webkit-animation: updown 1s infinite;
-        animation: updown 1s infinite;
-    }
-        
-    @-webkit-keyframes updown {
-        0% {
-            transform: translateY(5%);
-        }
-    
-        50% {
-            transform: translateY(1%);
-        }
-    
-        100% {
-            transform: translateY(5%);
-        }
-    }
-
-
-
-    .cafe77th .howTo .howTo-wrapper {
-        background-size: 100%;
-        padding: 80px;
-    }
-    .cafe77th .howTo-wrapper .sectionTitle-wrapper {
-        background-size: 55%;
-    }
-
-    .cafe77th .luckyDrawPrize-wrapper {
-        background-size: 110%;
-        padding: 160px 0 240px;
-    }
-
-    .cafe77th .giftBox-content {
-        width: 100%;
-        max-width: 800px;
-    }
-
-    .cafe77th .formsection > .container {
-        background-size: 75%;
-    }
-
-    .cafe77th .formButton {
-        margin: 40px auto 0;
-    }
-
-    .cafe77th .tncSection {
-        background-image: url(../../images/common/tnc-bg-desktop.png);
-    }
-    .cafe77th .tncSection .sectionTitle {
-        background-size: 70%;
-    }
 }
 
 
 @media screen and (min-width: 1200px) {
-    .cafe77th .mainBanner {
-        margin: 0px auto 0;
-    }
-    .cafe77th .imageBanner img {
-        max-width: 970px;
-    }
-
-    .cafe77th .stepBox .stepsWrapper {
-        max-width: 800px;
-    }
-
-    .cafe77th .howTo-wrapper .sectionTitle-wrapper {
-        background-size: 50%;
-    }
-    .cafe77th .howTo-wrapper h1 {
-        font-size: 1.9rem;
-    }
-
-    .cafe77th .howTo .howTo-wrapper ol {
-        width: 100%;
-        max-width: 650px;
-        margin: 0px auto 0;
-    }
-
-    .cafe77th .luckyDrawPrize-wrapper {
-        background-size: 100%;
-        max-width: 980px;
-        margin: 0 auto;
-        padding: 120px 0 160px;
-    }
-
-    .cafe77th .luckyDrawPrize .sectionTitle {
-        font-size: 1.9rem;
-    }
-
-    .cafe77th .giftBox .sectionTitle {
-        font-size: 1.9rem;
-        width: 55%;
-    }
-
-    .cafe77th .giftBox-content {
-        max-width: 930px;
-    }
-    .cafe77th .select-gift-group > div {
-        width: 25%;
-    }
-
-    .cafe77th .formsection > .container {
-        background-size: 65%;
-    }
-
-    .cafe77th .forminput input, 
-    .cafe77th .forminput select, 
-    .cafe77th .forminput img.for_captcha {
-        height: 50px;
-    }
-
-    .cafe77th .tncSection {
-        margin-top: -90px;
-    }
-
-    .cafe77th .tncSection .sectionTitle {
-        font-size: 1.9rem;
-    }
 
 }
 
 
 @media screen and (min-width: 1600px) {
-    .cafe77th .textBanner p {
-        font-size: 2rem;
-    }
-
-    .cafe77th .stepBox .stepsWrapper {
-        max-width: 870px;
-    }
-
-    .cafe77th .howTo .howTo-wrapper {
-        padding: 120px;
-    }
-    .cafe77th .howTo-wrapper .sectionTitle-wrapper {
-        background-size: 40%;
-    }
-    .cafe77th .howTo .howTo-wrapper ol li {
-        margin: 20px 0;
-    }
-
-    .cafe77th .luckyDrawPrize-wrapper {
-        max-width: 1200px;
-        padding: 180px 0 230px;
-    }
-
-    .cafe77th .luckyDrawPrize p {
-        font-size: 1.3rem;
-    }
-
-    .cafe77th .luckyDrawPrize-wrapper .table-wrapper {
-        max-width: 500px;
-    }
-
-    .cafe77th .giftBox .sectionTitle {
-        width: 40%;
-    }
 }   
 
 @media screen and (min-width: 1920px) {
-    .cafe77th .imageBanner img {
-        max-width: 1170px;
-    }
-    .cafe77th .textBanner .banner-title-desktop {
-        max-width: 950px;
-    }
-    .cafe77th .buttonBanner a {
-        font-size: 1.6rem;
-        max-width: 310px;
-    }
-
-    .cafe77th .stepBox .stepsWrapper {
-        max-width: 1010px;
-        margin: 100px auto;
-    }
-    .cafe77th .stepBox img.stepImages {
-        max-width: 260px;
-    }
-
-    .cafe77th .howTo-wrapper .sectionTitle-wrapper {
-        background-size: 50%;
-        padding: 20px 0;
-    }
-
-    .cafe77th .howTo-wrapper h1 {
-        font-size: 2.5rem;
-    }
-
-    .cafe77th .howTo .howTo-wrapper ol {
-        font-size: 1.7rem;
-    }
-
-    .cafe77th .luckyDrawPrize-wrapper {
-        max-width: 1500px;
-        padding: 210px 0 230px;
-    }
-    .cafe77th .luckyDrawPrize .sectionTitle {
-        font-size: 2.5rem;
-    }
-
-    .cafe77th .luckyDrawPrize .table .tr {
-        padding: 20px 0;
-    }
-
-    .cafe77th .giftBox .sectionTitle {
-        font-size: 2.5rem;
-    }
-    .cafe77th .giftBox-content {
-        max-width: 1190px;
-        padding: 50px 30px;
-    }
-
-    .cafe77th .select-gift-group .select-radio + .gift-label img {
-        max-width: 240px;
-    }
-    
-    .cafe77th .tncSection .sectionTitle {
-        font-size: 2.5rem;
-    }
 }
