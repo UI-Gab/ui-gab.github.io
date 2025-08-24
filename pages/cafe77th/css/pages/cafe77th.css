@@ -33,6 +33,7 @@
     justify-content: center;
     margin-top: -70px;
     padding-top: 130px;
+    padding-bottom: 30px;
 }
 
 .cafe77th .mainbanner-image-wrapper {
@@ -184,6 +185,11 @@
     z-index: -1;
 }
 
+.cafe77th .deliveryapps .searchbar-img {
+    width: 100%;
+    max-width: 220px;
+}
+
 /* MAP */
 .cafe77th .map-container {
     position: relative;
@@ -220,6 +226,12 @@
     list-style: none;
     text-align: left;
     padding: 0;
+}
+.footer .social-media .row .col {
+    width: 33%;
+}
+.footer .footer-icon {
+    font-size: 18px;
 }
 
 
