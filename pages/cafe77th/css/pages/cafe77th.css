@@ -82,7 +82,7 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 20px 0;
 }
@@ -95,7 +95,7 @@
     padding: 13px 30px;
     border-radius: 50px;
     margin: 15px 0;
-    width: 220px;
+    width: 150px;
     position: relative;
 }
 
@@ -104,7 +104,8 @@
     line-height: 1;
 }
 .cafe77th .bestsellers .item span.item-price {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    font-weight: 900;
 }
 
 .cafe77th .bestsellers .item .item-image-wrapper {
