@@ -11,6 +11,15 @@ header {
 	position: relative;
     z-index: 1;
 }
+.nav-links a {
+	padding: 5px 10px;
+}
+.nav-links a:hover {
+	text-decoration: none;
+    color: #fff;
+    background-color: #8c3d0f;
+    border-radius: 20px;
+}
 
 .icon-bar {
 	border: 2px solid #fff;
