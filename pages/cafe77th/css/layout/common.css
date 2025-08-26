@@ -39,7 +39,7 @@ h4 {
 .button-dark {
   background-color: #8c3d0f;
   color: #fff;
-  padding: 5px 10px;
+  padding: 5px 20px;
   border: none;
   border-radius: 20px;
   text-transform: uppercase;
@@ -47,92 +47,17 @@ h4 {
 .button-light {
   background-color: #f2cf66;
   color: #8c3d0f;
-  padding: 5px 10px;
+  padding: 5px 20px;
   border: none;
   border-radius: 20px;
   text-transform: uppercase;
 }
 
-.mainContent {
-  background-image: url('../../images/common/desktop-bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 20px 0 0;
-}
+
 
 .mainContent section {
   padding: 50px 0 20px;  
   margin: 0 auto 1.5rem;
-}
-
-.sectionTitle {
-  text-align: center;
-  margin-bottom: 30px;
-  color: var(--main-font-color);
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  font-family: var(--secondary-font-family);
-}
-
-.sectionTitle:hover {
-    text-decoration: none;
-    color: var(--main-font-color);
-}
-
-/* TNC */
-.mainContent .tncSection {
-  margin-bottom: 0;
-  padding-bottom: 50px;
-}
-
-.tnc-btn {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-}
-
-.tncSection ol {
-  font-size: 0.95rem;
-  margin: 0 auto;
-  max-width: 850px;
-  width: 90%;
-}
-
-.tncSection li {
-    margin: 10px 0;
-}
-
-.tncSection ol li a {
-  color: var(--main-notice-color);
-  text-decoration: underline;
-}
-.tncSection ol li a:hover {
-  opacity: .8;
-}
-
-/*yellow-cont : list-type change color*/
-ol.yellow-cont li {
-  counter-increment: my-awesome-counter;
-  margin-bottom: 0.5rem;
-  position: relative;
-}
-ol.yellow-cont {
-  padding-left: 25px;
-  list-style: none;
-}
-ol.yellow-cont li::before {
-  content: counter(my-awesome-counter) ".";
-  font-weight: bold;
-  line-height: 1;
-  padding-top: 3px;
-  /* background: linear-gradient(to right, #ffffbf 0%, #f9e4a8 45%, #f9e4a8 100%); */
- background-color: var(--main-notice-color);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
-  left: -30px;
-  width: 20px;
-  text-align: right;
 }
 
 /* Modal */
@@ -175,81 +100,34 @@ ol.yellow-cont li::before {
 
 
 @media screen and (max-width: 320px) {
-  /*Common*/
-  .default-btn {
-    font-size: 0.75rem;
-  }  
-  .sectionTitle {
-    font-size: 1.1rem;
-  }
+
 }
 
 @media screen and (min-width: 480px) {
-  /*Common*/
-  .default-btn {
-    max-width: 215px;
-  }
 
-  /* Banner Section*/
-  .textBanner p {
-    font-size: 1.3rem;
-  }
-
-  /*TNC*/
-  .tncSection ol {
-    font-size: 1rem;
-  }
 }
 
 @media screen and (min-width: 768px) {
-  /*Common*/
-  .default-btn {
-    font-size: 1rem;
-    max-width: 280px;
-    margin: 10px;
-  }
-  .sectionTitle {
-    font-size: 1.75rem;
+  .button-dark,
+  .button-light {
+    font-size: 1.2rem;
   }
 
-  /* Banner Section*/
-  .imageBanner img {
-    max-width: 700px;
-  } 
-  .textBanner p {
-    font-size: 1.5rem;
-  }
 }
 
 @media screen and (min-width: 991px) {
-  /*Common*/
-  .default-btn {
-    font-size: 17px;
-    margin-top: 0;
-  }
-  .sectionTitle {
-    font-size: 2.5rem;
-  }
+
 
 }
 
 @media screen and (min-width: 1024px) {
-  /*Common, TNC*/
-  body, .tncSection ol {
-    font-size: 18px;
-  }
+
 }
 
 @media screen and (min-width: 1200px) {
-  /*Common */
-  body {
-    font-size: 20px;
-  }
+
 }
 
 @media screen and (min-width: 1680px) {
-  /*Common*/
-  .default-btn {
-    font-size: 1.25rem;
-  }
+
 }

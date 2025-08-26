@@ -26,6 +26,7 @@
     background: radial-gradient(circle, rgba(253, 232, 171, 1) 0%, rgba(217, 177, 102, 1) 100%);    
     position: relative;
     padding: 10px 0;
+    height: 45vh
 }
 
 .cafe77th .mainbanner-contents {
@@ -71,8 +72,10 @@
 .cafe77th .bestsellers {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    height: 65vh;
+    padding: 40px 0 0px;
 }
 
 .cafe77th .bestsellers-content {
@@ -81,7 +84,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .cafe77th .bestsellers .item {
@@ -89,10 +92,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 20px 30px;
+    padding: 13px 30px;
     border-radius: 50px;
     margin: 15px 0;
-    width: 250px;
+    width: 220px;
     position: relative;
 }
 
@@ -112,7 +115,7 @@
 
 .cafe77th .bestsellers .item .item-image {
     width: 100%;
-    max-width: 80px;
+    max-width: 60px;
 }
 
 /* Coffee Cart */
@@ -190,6 +193,15 @@
     max-width: 220px;
 }
 
+.cafe77th .deliveryapps .beans-again {
+    position: absolute;
+    width: 170px;
+    right: -85px;
+    bottom: 0px;
+    transform: rotate(178deg);
+    z-index: 2;
+}
+
 /* MAP */
 .cafe77th .map-container {
     position: relative;
@@ -219,7 +231,7 @@
     width: 70px;
 }
 
-.footer h3 {
+.footer h4 {
     text-align: left;
 }
 .footer ul {
@@ -251,6 +263,12 @@
 }
 
 @media screen and (min-width: 480px) {
+    .cafe77th .nav-links ul li {
+        margin: 0 15px;
+    }
+    .header-logo {
+        max-width: 80px;
+    }
     .cafe77th .mainbanner-image-wrapper {
         left: 50px;
     }
@@ -270,11 +288,85 @@
 }
 
 @media screen and (min-width: 575px) {
+    .cafe77th .main-header {
+        justify-content: space-between;
+        max-width: 550px;
+    }
+    .cafe77th .mainbanner-image-wrapper {
+        left: 80px;
+    }
+    .cafe77th .mainbanner-image {
+        max-width: 220px;
+    }
+    .cafe77th .mainbanner-text h1 {
+        font-size: 4rem;
+    }
+
+    .cafe77th .bestsellers .item {
+        margin: 15px 10px;
+    }
+    .cafe77th .deliveryapps .find {
+        max-width: 480px;
+    }
+    .cafe77th .deliveryapps .find > div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .cafe77th .deliveryapps .foodpanda-mobile {
+        left: 110px;
+        width: 170px;
+        bottom: 60px;
+    }
+    .cafe77th .deliveryapps .grab-mobile {
+        right: 110px;
+        width: 170px;
+        bottom: 65px;
+    }
+    .footer .social-media .row .col {
+        width: 10px !important;
+        flex: none;
+        margin: 0 15px 0 0;
+    }
+    .footer .footer-icon {
+        font-size: 24px;
+    }
 
 }
 
+/* Make containers a max-width of 620px */
+@media screen and (min-width: 768px) { 
+    .cafe77th .main-header {
+        max-width: 620px;
+    }
+    .cafe77th .mainbanner-text h1 {
+        font-size: 5.5rem;
+    }
+    .cafe77th .mainbanner-image-wrapper {
+        left: 130px;
+        bottom: -60px;
+    }
+    .cafe77th .mainbanner-image {
+        max-width: 270px;
+    }
 
-@media screen and (min-width: 768px) {
+    .cafe77th .coffee-cart {
+        flex-direction: row;
+        padding: 30px 60px;
+    }
+    .cafe77th .coffee-cart .coffee-cart-text {
+        width: 60%;
+    }
+    .cafe77th .coffee-cart .coffee-cart-image-wrapper {
+        width: 40%;
+        text-align: center;
+    }
+    .cafe77th .coffee-cart button {
+        margin: 15px 0 0;
+    }
+    .cafe77th .deliveryapps {
+        max-width: 620px;
+    }
       
 }
 
