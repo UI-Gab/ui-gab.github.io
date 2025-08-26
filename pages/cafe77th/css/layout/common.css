@@ -93,15 +93,7 @@ h4 {
 }
 
 
-/* ADDITIONAL BOOTSTRAP 5 CSS */
-.container, 
-.container-lg, 
-.container-md, 
-.container-sm, 
-.container-xl, 
-.container-xxl {
-  max-width: 1140px;
-}
+
 
 
 @media screen and (max-width: 320px) {

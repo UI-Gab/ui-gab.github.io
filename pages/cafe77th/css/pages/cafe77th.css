@@ -265,17 +265,24 @@
 }
 
 @media screen and (min-width: 480px) {
-    .cafe77th .nav-links ul li {
-        margin: 0 15px;
-    }
     .header-logo {
         max-width: 80px;
+    }
+    .cafe77th .mainbanner {
+        height: auto;
+    }
+    .cafe77th .bestsellers {
+        height: auto;
+        padding: 40px 0 40px;
     }
     .cafe77th .mainbanner-image-wrapper {
         left: 50px;
     }
     .cafe77th .mainbanner .mainbanner-text {
         padding-left: 30%;
+    }
+    .cafe77th .bestsellers .item {
+        width: 210px;
     }
     .cafe77th .deliveryapps .find {
         margin: 220px auto 0;
@@ -351,6 +358,9 @@
     .cafe77th .mainbanner-image {
         max-width: 270px;
     }
+    .cafe77th .bestsellers-content {
+        max-width: 620px;
+    }
 
     .cafe77th .coffee-cart {
         flex-direction: row;
@@ -368,15 +378,65 @@
     }
     .cafe77th .deliveryapps {
         max-width: 620px;
-    }
-      
+    }      
 }
 
 @media screen and (min-width: 991px) {
+    .header-logo {
+        max-width: 100px;
+    }
+    .nav-links a {
+        font-size: 1.1rem;
+    }
+    .cafe77th .mainbanner-image-wrapper {
+        left: 240px;
+    }
+    .cafe77th .mainbanner .mainbanner-text {
+        padding-left: 20%;
+    }
+    .cafe77th .mainbanner-contents {
+        padding-top: 110px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cafe77th .coffee-cart {
+        padding: 30px 120px;
+    }
+    .cafe77th .coffee-cart .beans {
+        width: 220px;
+    }
+    .cafe77th .deliveryapps .beans-again {
+        width: 220px;
+        right: -275px;
+    }
 }
 
 
+
 @media screen and (min-width: 1200px) {
+    .cafe77th .mainbanner-image-wrapper {
+        left: 340px;
+    }
+    .cafe77th .coffee-cart {
+        padding: 30px 180px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .cafe77th .mainbanner-image-wrapper {
+        left: 440px;
+    }
+    .cafe77th .bestsellers .item {
+        width: 250px;
+    }
+
+    .cafe77th .bestsellers .item .item-image {
+        max-width: 80px;
+    }
+
+}
+@media screen and (min-width: 1440px) {
 
 }
 
