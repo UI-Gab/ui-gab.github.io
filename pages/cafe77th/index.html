@@ -69,16 +69,16 @@
                     <img src="images/common/cafe77th-logo.png" class="header-logo" alt="cafe77thlogo" title="cafe77thlogo">
                     <div class="nav-links">
                         <ul>
-                            <li>Home</li>
-                            <li>Menu</li>
-                            <li>Delivery</li>
-                            <li>Location</li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a type="button" data-bs-toggle="modal" data-bs-target="#imageModal">Menu</a></li>
+                            <li><a href="#deliveryapps">Delivery</a></li>
+                            <li><a href="#location">Location</a></li>
                         </ul>
                     </div>
                 </div>             
                 <!-- End of Header -->
                 <!-- Main Banner contents -->
-                <div class="mainbanner-contents">
+                <div class="mainbanner-contents" id="home">
                     <div class="mainbanner-image-wrapper">
                         <img src="images/common/mainbanner-image.png" class="mainbanner-image" alt="mainbanner-image" data-aos="fade-right">
                     </div>
@@ -135,7 +135,7 @@
                 </div>
                 
             </div>
-            <button class="button-dark">View Full Menu</button>
+            <button class="button-dark" type="button" data-bs-toggle="modal" data-bs-target="#imageModal">View Full Menu</button>
             </section>
             <!-- END BESTSELLERS -->
 
@@ -158,7 +158,7 @@ Reserve now for AS LOW AS 2000Php </p>
             <!-- END COFFEE CART -->
 
             <!-- START DELIVERY APPS -->
-            <section class="deliveryapps">
+            <section class="deliveryapps" id="deliveryapps">
                 <h1>Get Coffee and Food delivered straight to your doorstep</h1>
                 <p>We are on</p>
                 <p>
@@ -183,7 +183,7 @@ Reserve now for AS LOW AS 2000Php </p>
             <!-- END DELIVERY APPS -->
 
             <!-- START MAP -->
-            <section class="map-container">
+            <section class="map-container" id="location">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.7402776565127!2d120.98302707573943!3d14.442125780935722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d3287ca60a25%3A0xbaf14bd4ff44b83c!2sCAFE%2077TH!5e0!3m2!1sen!2sus!4v1755869348892!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
             <!-- END MAP -->
@@ -239,17 +239,16 @@ Reserve now for AS LOW AS 2000Php </p>
 </body>
 
 <!-- Modals -->
-<!-- Submit Message Modal -->
-<div class="submitMessage modal fade" id="submitMessageModal" tabindex="-1" role="dialog" aria-labelledby="submitMessageModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-            <span>Submit Form Successful!</span>          
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"> <!-- Vertically centered -->
+        <div class="modal-content">
+        <div class="modal-body text-center">
+            <img src="images/common/cafe77th-menu.png" class="img-fluid rounded" alt="Sample Image">
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
-      </div>
+        </div>
     </div>
 </div>
 

@@ -76,15 +76,18 @@ h4 {
 }
 
 .modal .modal-content {
-  box-shadow: 1px 1px 20px white;
-  color: var(--main-modal-font-color);
-  background-color: var(--main-modal-bg-color);
+  background-color: #f2cf66;
   text-align: center;
 }
 
 .modal-footer {
   justify-content: center;
   border-top: 0;
+}
+.modal-footer button {
+  background-color: #8c3d0f;
+  color: #fff;
+  border: none;
 }
 
 
