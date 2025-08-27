@@ -2,13 +2,11 @@
     padding: 0;
     overflow: hidden;
 }
-
 .cafe77th .main-header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .cafe77th .nav-links ul {
     display: flex;
     list-style: none;
@@ -69,56 +67,100 @@
     margin-top: 20px;
 }
 
-/* Best Sellers */
+/* Steps Section */
 .cafe77th .bestsellers {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 55vh;
-    padding: 40px 0 0px;
-}
-
-.cafe77th .bestsellers-content {
-    display: flex;
+    text-align: center;
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px 0;
+    margin: 0;
+    padding: 0;
 }
 
-.cafe77th .bestsellers .item {
-    background-color: #f2cf66;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 13px 30px;
-    border-radius: 50px;
-    margin: 15px 0;
-    width: 160px;
-    position: relative;
+
+.cafe77th .bestsellers .bestsellers-wrapper {
+    display: none;
+    margin: 50px auto;
 }
 
-.cafe77th .bestsellers .item span {
+.cafe77th .bestsellers .bestsellers-wrapper > div {
+    width: 33.3%;
+}
+
+.cafe77th .bestsellers .bestsellers-icons-slider {
     display: block;
-    line-height: 1;
-}
-.cafe77th .bestsellers .item span.item-price {
-    font-size: 1.1rem;
-    font-weight: 900;
 }
 
-.cafe77th .bestsellers .item .item-image-wrapper {
-    position: absolute;
-    right: 10px;
-    top: -10px;
+.cafe77th .bestsellers .bestsellers-icons-slider .carousel-inner {
+    margin: 2rem auto;
+    padding: 2rem 1rem 0;
+    width: 85%;
 }
 
-.cafe77th .bestsellers .item .item-image {
+.cafe77th .bestsellers .bestsellers-icons-slider .carousel-indicators {
+    bottom: -30px;
+}
+
+.carousel-item {
+    height: 420px;
+    padding: 10px;
+}
+
+.carousel-control-next, 
+.carousel-control-prev {
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #8c3d0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+    font-size: 23px;
+    color: #fff; /* white arrow */
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.carousel-control-prev-icon::after {
+  content: '‹'; /* left arrow */
+}
+
+.carousel-control-next-icon::after {
+  content: '›'; /* right arrow */
+}
+
+
+
+
+
+.cafe77th .bestsellers img.product-image {
     width: 100%;
-    max-width: 60px;
+    border-radius: 20px;
+    margin: 10px 0 20px;
+} 
+.cafe77th .bestsellers .product-name {
+    text-align: left;
+    margin: 0;
 }
+.cafe77th .bestsellers .product-desc {
+    text-align: left;
+    line-height: 1.3;
+    margin: 0;
+}
+.cafe77th .bestsellers .product-price {
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: var(--main-header-font-family);
+}
+
 
 /* Coffee Cart */
 .cafe77th .coffee-cart {
@@ -271,18 +313,11 @@
     .cafe77th .mainbanner {
         height: auto;
     }
-    .cafe77th .bestsellers {
-        height: auto;
-        padding: 40px 0 40px;
-    }
     .cafe77th .mainbanner-image-wrapper {
         left: 50px;
     }
     .cafe77th .mainbanner .mainbanner-text {
         padding-left: 30%;
-    }
-    .cafe77th .bestsellers .item {
-        width: 210px;
     }
     .cafe77th .deliveryapps .find {
         margin: 220px auto 0;
@@ -311,9 +346,7 @@
         font-size: 4rem;
     }
 
-    .cafe77th .bestsellers .item {
-        margin: 15px 10px;
-    }
+
     .cafe77th .deliveryapps .find {
         max-width: 480px;
     }
@@ -358,9 +391,7 @@
     .cafe77th .mainbanner-image {
         max-width: 270px;
     }
-    .cafe77th .bestsellers-content {
-        max-width: 620px;
-    }
+
 
     .cafe77th .coffee-cart {
         flex-direction: row;
@@ -397,6 +428,22 @@
     .cafe77th .mainbanner-contents {
         padding-top: 110px;
     }
+
+    .cafe77th .bestsellers .bestsellers-icons-slider {
+        display: none;
+    }
+    .cafe77th .bestsellers .bestsellers-wrapper {
+        display: flex;
+        width: 90%;
+    }  
+    .cafe77th .bestsellers img.stepImages {
+        width: 100%;
+        max-width: 200px;
+        -webkit-transform-origin: top center;
+        transform-origin: top center;
+        -webkit-animation: updown 1s infinite;
+        animation: updown 1s infinite;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -427,14 +474,6 @@
     .cafe77th .mainbanner-image-wrapper {
         left: 440px;
     }
-    .cafe77th .bestsellers .item {
-        width: 250px;
-    }
-
-    .cafe77th .bestsellers .item .item-image {
-        max-width: 80px;
-    }
-
 }
 @media screen and (min-width: 1440px) {
 
