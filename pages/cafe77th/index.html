@@ -8,14 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- jQuery -->
-    <script src="vendor/jquery-v3.4.1/jQuery.v3.4.1.js"></script>
+    <!-- <script src="vendor/jquery-v3.4.1/jQuery.v3.4.1.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- vendor script -->
     <script src="vendor/bootstrap-v5.2.3/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/aos/js/aos.js"></script>
+    <script src="vendor/aos/js/aos.js"></script>    
+    
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <!-- vendor css -->
     <link rel="stylesheet" href="vendor/aos/css/aos.css">
     <link rel="stylesheet" href="vendor/bootstrap-v5.2.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/layout/header.css">
@@ -81,9 +88,9 @@
                 <!-- Main Banner contents -->
                 <div class="mainbanner-contents" id="home">
                     <div class="mainbanner-image-wrapper">
-                        <img src="images/common/mainbanner-image.png" class="mainbanner-image" alt="mainbanner-image" data-aos="fade-right">
+                        <img src="images/common/mainbanner-image.png" class="mainbanner-image" alt="mainbanner-image" data-aos="fade-right" data-aos-duration="3000">
                     </div>
-                    <div class="mainbanner-text" data-aos="fade-left">
+                    <div class="mainbanner-text" data-aos="fade-left" data-aos-duration="3000">
                         <h1>Awaken</h1>
                         <h1>Your</h1>
                         <h1>Senses</h1>
@@ -94,10 +101,8 @@
             </section>
             <!-- END BANNER -->
 
-
-
             <!-- START BESTSELLERS -->
-            <section id="bestsellers" class="bestsellers" data-aos="zoom-in-up">
+            <section id="bestsellers" class="bestsellers">
                 <h1>Our Best Sellers</h1>
 
                 <div class="bestsellers-wrapper">
@@ -156,9 +161,12 @@
             <!-- END BESTSELLERS -->
 
             <!-- VIDEO EMBED -->
-            <section class="video-embed-wrapper">
+            <!-- <section class="video-embed-wrapper">
                 <iframe class="video-embed" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1144073097192843%2F&show_text=false&width=267&t=0&autoplay=1&loop=1" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-            </section>
+            </section> -->
+            <!-- END VIDEO -->
+
+            
 
 
             <!-- START COFFEE CART -->
@@ -172,12 +180,36 @@ Reserve now for AS LOW AS 2000Php </p>
 
                 </div>
                 <div class="coffee-cart-image-wrapper">
-                    <img src="images/common/coffeecart.png" class="coffee-cart-image" alt="" data-aos="fade-up">
+                    <img src="images/common/coffeecart.png" class="coffee-cart-image" alt="">
                 </div>
 
                 <img src="images/common/beans.png" class="beans" alt="">
             </section>
             <!-- END COFFEE CART -->
+
+            <!-- START COFFEE COMMUNITY -->             
+            <section class="coffee-community my-carousel-section">
+                <h1>Love from our Coffee Community</h1>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <p class="community-testimonial">Discovered this cafe just recently & it instantly became my favorite 🥹 ngl, ang sarap ng everything!!! Coffee, Frappe, Croffles and Lasagna grabeee talagaaa 🤍 Cant get it off my mind to the point na naginstall pa ako foodpanda just to order huhu. Thank youuu!</p>
+                        <p class="community-name">Richelda</p>
+                    </div>
+                    <div class="item">
+                        <p class="community-testimonial">Great service! Sarap ng spanish latte at croffles! 😋<br>Super sulit! Will definitely order again soon! 👍</p>
+                        <p class="community-name">Raquel C.</p>
+                    </div>
+                    <div class="item">
+                        <p class="community-testimonial">My favorite cafe ever since it opened, place is cozy and homey, but the best thing they have is their coffee, it's authentic, they have a lot of selections and the quality and taste is just the best for me.</p>
+                        <p class="community-name">Migo</p>
+                    </div>
+                    <div class="item">
+                        <p class="community-testimonial">I definitely recommend Cafe77th. It’s my first time to visit and their coffee is so good! The place has a nice ambiance, and their staff is very kind and accommodating. This cafe truly deserves your visit and recommendation. 🩷</p>
+                        <p class="community-name">Ingrid</p>
+                    </div>
+                </div>
+            </section>
+             <!-- END COFFEE COMMUNITY -->
 
             <!-- START DELIVERY APPS -->
             <section class="deliveryapps" id="deliveryapps">
@@ -209,6 +241,8 @@ Reserve now for AS LOW AS 2000Php </p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.7402776565127!2d120.98302707573943!3d14.442125780935722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d3287ca60a25%3A0xbaf14bd4ff44b83c!2sCAFE%2077TH!5e0!3m2!1sen!2sus!4v1755869348892!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
             <!-- END MAP -->
+
+            
 
         </div>
 
@@ -279,27 +313,35 @@ Reserve now for AS LOW AS 2000Php </p>
     
     AOS.init();
 
-    // Autoplay embedded video
-    document.addEventListener("DOMContentLoaded", () => {
-    const iframe = document.querySelector(".video-embed");
-    const src = iframe.getAttribute("src");
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          // Add autoplay when visible
-          if (!iframe.src.includes("autoplay=1")) {
-            iframe.src = src + "&autoplay=1";
-          }
-        } else {
-          // Reset video when out of view
-          iframe.src = src;
+    // Owl Carousel
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        dots: true,
+        responsive:{
+          0:{ items:1 },        // Mobile
+          600:{ items:2 },      // Tablet
+          1000:{ items:4 }      // Desktop
         }
       });
-    }, { threshold: 0.5 }); // play when at least 50% visible
 
-    observer.observe(iframe);
+// Initialize AOS after Owl
+  AOS.init({
+
   });
+
+  // Refresh AOS after Owl has moved/loaded
+  owl.on('initialized.owl.carousel translated.owl.carousel refreshed.owl.carousel', function () {
+    AOS.refreshHard();
+  });
+    });
+
+
+
+
 
 </script>
 </html>

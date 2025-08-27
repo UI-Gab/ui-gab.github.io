@@ -181,6 +181,72 @@
     height: 100vh;     /* optional: full screen height */
 }
 
+/* Coffee Community */
+.cafe77th .coffee-community {
+    /* margin-top: -100px; */
+}
+.cafe77th .coffee-community h1 {
+    text-align: center;
+}
+
+.cafe77th .coffee-community .item {
+    background: #dddddd;
+    color: var(--font-color-lightbg);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    width: 75%;
+    margin: 0 auto;
+    height: 410px;
+}
+
+.cafe77th .coffee-community .item .community-testimonial {
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+.cafe77th .coffee-community .item .community-name {
+    font-size: 1.4rem;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none; /* let clicks pass except buttons */
+    color: #8c3d0f;
+}
+
+.owl-nav button {
+    color: #fff;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 20px;
+    pointer-events: all; /* re-enable on buttons */
+    transition: 0.3s;
+}
+
+.owl-nav button span {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+    color: #8c3d0f;
+}
+
+.owl-dots {
+    margin-top: 30px;
+}
+
 
 /* Coffee Cart */
 .cafe77th .coffee-cart {
