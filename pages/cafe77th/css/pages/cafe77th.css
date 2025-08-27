@@ -25,7 +25,8 @@
     background: radial-gradient(circle, rgba(253, 232, 171, 1) 0%, rgba(217, 177, 102, 1) 100%);    
     position: relative;
     padding: 10px 0;
-    height: 45vh
+    height: 45vh;
+    margin: 0 auto;
 }
 
 .cafe77th .mainbanner-contents {
@@ -72,9 +73,9 @@
     text-align: center;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 40px 0 0;
+    height: 60vh;
 }
-
 
 .cafe77th .bestsellers .bestsellers-wrapper {
     display: none;
@@ -90,17 +91,28 @@
 }
 
 .cafe77th .bestsellers .bestsellers-icons-slider .carousel-inner {
-    margin: 2rem auto;
-    padding: 2rem 1rem 0;
+    margin: 0 auto;
+    padding: 10px 13px 0;
     width: 85%;
 }
 
-.cafe77th .bestsellers .bestsellers-icons-slider .carousel-indicators {
-    bottom: -30px;
+
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;         /* make them circular */
+  border: 2px solid #8c3d0f;  /* brown border */
+  background-color: transparent; /* transparent by default */
+  margin: 0 6px;              /* spacing between dots */
+}
+
+.carousel-indicators .active {
+  background-color: #8c3d0f;  /* brown fill for active */
 }
 
 .carousel-item {
-    height: 420px;
+    height: 400px;
     padding: 10px;
 }
 
@@ -144,7 +156,7 @@
 .cafe77th .bestsellers img.product-image {
     width: 100%;
     border-radius: 20px;
-    margin: 10px 0 20px;
+    margin: 10px 0;
 } 
 .cafe77th .bestsellers .product-name {
     text-align: left;
