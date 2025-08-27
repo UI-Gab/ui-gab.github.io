@@ -25,6 +25,7 @@
     <!-- Main js -->
 </head>
 <body>
+
     <!-- main wrapper -->
     <div class="container-fluid p-0 m-0">
         <!-- START OF HEADER -->
@@ -97,6 +98,7 @@
 
             <!-- START BESTSELLERS -->
             <section id="bestsellers" class="bestsellers" data-aos="zoom-in-up">
+                <h1>Our Best Sellers</h1>
 
                 <div class="bestsellers-wrapper">
                     <div class="">
@@ -112,7 +114,7 @@
 
                 <!-- SLIDER FOR MOBILE VIEW -->
                  <!-- data-bs-ride="carousel" -->
-                <div id="bestsellers-slider" class="carousel slide bestsellers-icons-slider">
+                <div id="bestsellers-slider" class="carousel slide bestsellers-icons-slider" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#bestsellers-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#bestsellers-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -147,9 +149,17 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <!-- END OF SLIDER FOR MOBILE VIEW -->                
+                <!-- END OF SLIDER FOR MOBILE VIEW -->     
+                 
+                <button class="button-dark" data-bs-toggle="modal" data-bs-target="#imageModal">VIEW FULL MENU</button>
             </section>
             <!-- END BESTSELLERS -->
+
+            <!-- VIDEO EMBED -->
+            <section class="video-embed-wrapper">
+                <iframe class="video-embed" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1144073097192843%2F&show_text=false&width=267&t=0&autoplay=1&loop=1" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </section>
+
 
             <!-- START COFFEE CART -->
             <section class="coffee-cart">
@@ -268,6 +278,28 @@ Reserve now for AS LOW AS 2000Php </p>
 <script>
     
     AOS.init();
+
+    // Autoplay embedded video
+    document.addEventListener("DOMContentLoaded", () => {
+    const iframe = document.querySelector(".video-embed");
+    const src = iframe.getAttribute("src");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Add autoplay when visible
+          if (!iframe.src.includes("autoplay=1")) {
+            iframe.src = src + "&autoplay=1";
+          }
+        } else {
+          // Reset video when out of view
+          iframe.src = src;
+        }
+      });
+    }, { threshold: 0.5 }); // play when at least 50% visible
+
+    observer.observe(iframe);
+  });
 
 </script>
 </html>

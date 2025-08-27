@@ -73,8 +73,7 @@
     text-align: center;
     width: 100%;
     margin: 0;
-    padding: 40px 0 0;
-    height: 60vh;
+    padding: 60px 0;
 }
 
 .cafe77th .bestsellers .bestsellers-wrapper {
@@ -88,11 +87,12 @@
 
 .cafe77th .bestsellers .bestsellers-icons-slider {
     display: block;
+    margin-bottom: 20px;
 }
 
 .cafe77th .bestsellers .bestsellers-icons-slider .carousel-inner {
     margin: 0 auto;
-    padding: 10px 13px 0;
+    padding: 0 13px 0;
     width: 85%;
 }
 
@@ -149,10 +149,6 @@
   content: '›'; /* right arrow */
 }
 
-
-
-
-
 .cafe77th .bestsellers img.product-image {
     width: 100%;
     border-radius: 20px;
@@ -173,6 +169,18 @@
     font-family: var(--main-header-font-family);
 }
 
+/* Video Embed */
+.mainContent .video-embed-wrapper {
+    padding: 0;
+    margin: 0;
+}
+.video-embed {
+    display: block;
+    width: 100%;       /* take full width of parent */
+    max-width: 100vw;  /* prevent overflow beyond viewport */
+    height: 100vh;     /* optional: full screen height */
+}
+
 
 /* Coffee Cart */
 .cafe77th .coffee-cart {
@@ -184,6 +192,7 @@
     align-items: center;
     padding: 20px 30px;
     position: relative;
+    margin-top: -100px;
 }
 
 .cafe77th .coffee-cart > div {
@@ -225,7 +234,7 @@
 }
 
 .cafe77th .deliveryapps .find {
-    background-color: #d9b166;
+    background-color: #f2cf66;
     padding: 30px;
     border-radius: 20px;
     margin: 160px auto 0;
