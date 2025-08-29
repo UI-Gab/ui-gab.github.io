@@ -375,7 +375,7 @@ a {
   padding: 120px 0;
 }
 .wrapper > .slide > .works-wrapper {
-  max-width: 250px;
+  max-width: 300px;
 }
 .works-wrapper {
   display: flex;
@@ -388,17 +388,19 @@ a {
   display: flex;
   width: 100%;
   margin: 20px 5px;
-  text-align: center;
+  text-align: left;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: #fafafa;
+  color: #333;
+  border-radius: 20px;
 }
 .works-item img {
   width: 100%;
   margin-bottom: 15px;
-  border-radius: 15px;
-  border: 2px solid #000;
-  box-shadow: 3px 6px 0px #000;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .works-item a {
   color: var(--secondary-accent-color);
@@ -412,14 +414,15 @@ a {
 }
 .works-item .works-desc {
   width: 100%;
-  padding-left: 10px;
   line-height: 1.2;
   text-align: center;
   font-weight: 600;
+  padding: 20px 20px 30px;
+}
+.works-item .works-desc p {
+  font-weight: normal;
 }
 .works-item .works-desc a {
-  display: block;
-  width: max-content;
   margin-top: 10px;
 }
 .works-item .works-desc a:hover {
@@ -624,12 +627,23 @@ a {
     max-width: 650px;
   }
   .wrapper > .slide > .works-wrapper {
-    max-width: 650px;
+    max-width: 700px;
   }
   .works-item {
-    width: 30%;
+    flex-direction: row;
+    width: 100%;
     margin: 20px 20px;
   }  
+  .works-item img {
+    max-width: 100%;
+    margin: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+  }
+  .works-item .works-desc {
+    text-align: left;
+  }
 
   .main-banner .short-profile {
     line-height: 1.4;
@@ -684,9 +698,7 @@ a {
   .tools-item {
     font-size: 1.2rem;
   }
-  .works-item img {
-    max-width: 200px;
-  }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -743,13 +755,26 @@ a {
   }
 
   .wrapper > .slide > .works-wrapper {
-    max-width: 1200px;
+    max-width: 930px;
   }
-  .works-item img {
-    max-width: 250px;
+
+  .works-item {
+    width: 75%;
+  }
+  .works-item > a {
+    width: 70%;
   }
 
   .modal-dialog-scrollable .modal-content {
     max-height: 90%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .wrapper > .slide > .works-wrapper {
+    max-width: 1500px;
+  }
+  .works-item {
+      width: 45%;
   }
 }
