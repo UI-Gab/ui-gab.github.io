@@ -730,8 +730,7 @@ a {
     position: fixed;
     width: 100%;
     z-index: 9999;
-  }
-  
+  }  
   .desktop-header-wrapper ul{
     list-style: none;
     display: flex;
@@ -739,8 +738,7 @@ a {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 0;
-  }
-  
+  }  
   .desktop-header-wrapper ul li a {
     color: #111;
     text-transform: uppercase;
@@ -749,20 +747,83 @@ a {
   .desktop-header-wrapper ul li a:hover {
     color: #ffffff;   
   }
-  
+
+  /* Banner */
+  .text-banner .roles {
+    font-size: 1.4rem;
+  }
+  .main-banner .short-profile {
+    font-size: 1.2rem;
+  }  
+  .image-banner {
+    margin-top: 40px;
+  }
   .image-banner img {
     height: 170px;
   }
+  .text-banner .title {
+    text-shadow: 5px 4px 0px #000;
+  }
+  .text-banner p.contacts i {
+    font-size: 1.8rem;
+  }
 
+  /* Experience */
+  .accordionExperience .accordion-button.heading > div > span:first-child {
+    font-size: 1.3rem;
+  }
+  .accordionExperience .accordion-button.heading {
+    font-size: 1rem;
+  }
+  .accordionExperience .accordion-body ul {
+    font-size: 1.1rem;
+  }
+
+  /* Tools */
+  .tools-item {
+    font-size: 1.3rem;
+  }
+
+  /* Skills */
+  .skills ul {
+    font-size: 1.2rem;
+  }
+  .skills ul li {
+    margin: 8px 0;
+  }
+
+  /* Portfolio */
   .wrapper > .slide > .works-wrapper {
     max-width: 930px;
   }
-
   .works-item {
     width: 75%;
   }
   .works-item > a {
     width: 70%;
+  }
+  .works-desc span {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  /* Education */
+  .educ .carousel.slide {
+    max-width: 790px;
+  }
+  #educ .carousel .card h2.heading {
+    font-size: 2rem;
+  }
+  #educ .carousel .card p {
+    font-size: 1.2rem;
+  }
+
+  /* References */
+  .references h2.heading {
+    font-size: 1.6rem;
+  }
+  .card p {
+    font-size: 1.2rem;
   }
 
   .modal-dialog-scrollable .modal-content {
