@@ -375,7 +375,7 @@ a {
   padding: 120px 0;
 }
 .wrapper > .slide > .works-wrapper {
-  max-width: 300px;
+  max-width: 340px;
 }
 .works-wrapper {
   display: flex;
@@ -392,15 +392,15 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #fafafa;
+  background: transparent;
   color: #333;
   border-radius: 20px;
+  box-shadow: 3px 6px 0px #000;
+  overflow: hidden;
 }
 .works-item img {
   width: 100%;
   margin-bottom: 15px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 }
 .works-item a {
   color: var(--secondary-accent-color);
@@ -415,9 +415,13 @@ a {
 .works-item .works-desc {
   width: 100%;
   line-height: 1.2;
-  text-align: center;
   font-weight: 600;
-  padding: 20px 20px 30px;
+  padding: 20px 20px 20px;
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  background-color: var(--secondary-background-color);
+  color: #333;
 }
 .works-item .works-desc p {
   font-weight: normal;
@@ -569,6 +573,37 @@ a {
   margin-bottom: 15px;
 }
 
+/* Portfolio Modals  */
+.modal.portfolio .modal-header {
+  background-color: var(--secondary-background-color);
+  color: #fff;
+}
+.modal.portfolio .modal-body {
+  padding: 0;
+}
+.modal.portfolio .modal-body .works-desc {
+  padding: 20px;
+}
+.modal.portfolio .modal-body .works-desc h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.modal.portfolio .folio-modal-img {
+  width: 100%;
+}
+.modal.portfolio .modal-footer {
+  justify-content: center;
+  background-color: var(--secondary-background-color);
+}
+.modal.portfolio .modal-footer a {
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: var(--secondary-accent-color);
+}
+
 
 
 /* Media Queries */
@@ -580,37 +615,6 @@ a {
         padding: 10px 20px 5px;
     }
 }
-
-/* Portfolio Modals  */
-.modal.portfolio .modal-header {
-  background-color: var(--main-background-color);
-  color: #fff;
-}
-.modal.portfolio .modal-header h1 {
-  font-size: 1rem !important;
-  text-transform: uppercase;
-  font-weight: normal;
-  line-height: 1;
-  font-family: var(--title-font-family);
-}
-.modal.portfolio .modal-body {
-  padding: 0;
-}
-.modal.portfolio .folio-modal-img {
-  width: 100%;
-}
-.modal.portfolio .modal-footer {
-  justify-content: center;
-  background-color: var(--main-background-color);
-}
-.modal.portfolio .modal-footer a {
-  color: #fff;
-  font-weight: 600;
-  padding: 10px 30px;
-  border-radius: 10px;
-  background-color: var(--secondary-accent-color);
-}
-
 
 @media screen and (min-width: 768px) {
   /* commons   */
@@ -631,7 +635,7 @@ a {
   }
   .works-item {
     flex-direction: row;
-    width: 100%;
+    width: 40%;
     margin: 20px 20px;
   }  
   .works-item img {
@@ -794,17 +798,11 @@ a {
 
   /* Portfolio */
   .wrapper > .slide > .works-wrapper {
-    max-width: 930px;
+    max-width: 1200px;
   }
   .works-item {
-    width: 75%;
-  }
-  .works-item > a {
-    width: 70%;
-  }
-  .works-desc span {
-    font-size: 1.2rem;
-    line-height: 1;
+    max-width: 350px;
+    width: 30%;
   }
 
   /* Education */
