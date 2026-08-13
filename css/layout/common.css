@@ -677,7 +677,7 @@ a {
     height: 200px;
   }
   .wrapper > .slide > .tools-content {
-    max-width: 300px;
+    max-width: 400px;
   }  
   
   #experience h1.title {
@@ -791,9 +791,6 @@ a {
   /* Skills */
   .skills ul {
     font-size: 1.2rem;
-  }
-  .skills ul li {
-    margin: 8px 0;
   }
 
   /* Portfolio */
