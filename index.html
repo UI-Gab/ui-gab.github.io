@@ -607,8 +607,10 @@
           <h3>EVENTS INDUSTRY SOCIAL MEDIA VIDEO PRODUCTION</h3>
           <p>Produced engaging short-form video content for an event coordination business by shooting and editing high-impact Instagram Reels. The project highlights skills in visual storytelling, mobile videography, post-production pacing, and social media trend utilization, ensuring both brand consistency and maximum audience reach.</p>
         </div>
+        <div class="video-container" style="height: 450px;">
+          <iframe id="driveVideo" src="https://drive.google.com/file/d/1JuGkfmGDV0JTUvxCa2DCtqXSd4JRpZ3u/preview" width="100%" height="100%"></iframe>          
+        </div>       
         
-        <iframe src="https://drive.google.com/file/d/1JuGkfmGDV0JTUvxCa2DCtqXSd4JRpZ3u/preview" width="100%" height="480"></iframe>
       </div>
 
     </div>
@@ -704,6 +706,22 @@
 <script>
     
     AOS.init();
+
+    // Wait for the DOM to load
+    document.addEventListener("DOMContentLoaded", function() {
+      const myModalEl = document.getElementById('portfolio-epreels');
+      const iframe = document.getElementById('driveVideo');
+
+      if (myModalEl && iframe) {
+        // Listen for Bootstrap's native 'hidden' event 
+        // This fires regardless of HOW the modal was closed (click, backdrop, or Esc key)
+        myModalEl.addEventListener('hidden.bs.modal', function () {
+          // Resetting the src attribute kills the active video and audio feed
+          iframe.src = iframe.src; 
+        });
+      }
+    });
+
 
 </script>
 </html>
