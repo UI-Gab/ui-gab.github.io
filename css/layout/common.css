@@ -604,6 +604,10 @@ a {
   background-color: var(--secondary-accent-color);
 }
 
+#portfolio-epreels .modal-dialog .video-container {
+  height: 450px;
+}
+
 
 
 /* Media Queries */
@@ -720,6 +724,13 @@ a {
   }
   .modal.portfolio .modal-dialog {
     max-width: 575px;
+  }
+
+  #portfolio-epreels .modal-dialog {
+    max-width: 950px;
+  }
+  #portfolio-epreels .modal-dialog .video-container {
+    height: 535px;
   }
 }
 
