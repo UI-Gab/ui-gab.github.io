@@ -577,7 +577,7 @@ a {
 
  #experience .carousel.slide {
     justify-content: flex-start;
-    height: 700px;
+    height: 550px;
     width: 100%;
      background-color: transparent;
 }
@@ -625,10 +625,11 @@ a {
 }
 #experience .carousel .card h2.heading span.experience-position {
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 #experience .carousel .card h2.heading span.experience-employer {
   margin-top: 10px;
+  font-size: 1rem;
 }
 #experience .carousel .card h2.heading span.experience-date {
   font-size: 1rem;
@@ -646,8 +647,8 @@ a {
 
 #experience .carousel .card ul {
   font-size: 1rem;
-  line-height: 1.3rem;
-  padding: 20px 15px 20px 35px;
+  line-height: 1.1rem;
+  padding: 20px 15px 0px 35px;
 }
 #experience .carousel .card ul li {
   margin-bottom: 10px;
