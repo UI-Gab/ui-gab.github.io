@@ -713,7 +713,7 @@ a {
 
 @media screen and (min-width: 575px) {
   #experience .carousel.slide {
-    height: 550px;
+    height: 450px;
   }
 }
 
@@ -892,8 +892,18 @@ a {
   .accordionExperience .accordion-body ul {
     font-size: 1.1rem;
   }
+  #experience .carousel.slide {
+    height: 500px;
+  }
+  #experience .carousel .card h2.heading span.experience-position {
+    font-size: 1.5rem;
+  }
+  #experience .carousel .card h2.heading span.experience-employer {
+    font-size: 1.2rem;
+  }
   #experience .carousel .card ul {
     font-size: 1.2rem;
+    line-height: 1.3rem;
   }
 
   /* Tools */
