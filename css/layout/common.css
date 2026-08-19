@@ -373,9 +373,7 @@ a {
 .wrapper > .slide#skills .vector {
     display: none;
 }
-.skills .card {
-  font-size: 1.2rem;
-}
+
 .skills .card h4 {
   font-weight: 900;
 }
@@ -647,7 +645,7 @@ a {
 }
 
 #experience .carousel .card ul {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.3rem;
   padding: 20px 15px 20px 35px;
 }
@@ -892,6 +890,9 @@ a {
   }
   .accordionExperience .accordion-body ul {
     font-size: 1.1rem;
+  }
+  #experience .carousel .card ul {
+    font-size: 1.2rem;
   }
 
   /* Tools */
