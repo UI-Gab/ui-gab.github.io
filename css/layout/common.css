@@ -127,6 +127,9 @@ header button i {
 }
 
 /* Main Banner */
+#banner .heroimg {
+  display: none;
+}
 .main-banner {
   margin: 0px auto;
   display: flex;
@@ -163,11 +166,12 @@ header button i {
   margin: 20px auto 0;
 }
 .image-banner img {
-  border-radius:80px;
+  /* border-radius:80px;
   border: 3px solid #000;
   margin: 10px auto 20px;
   height: 150px;
-  box-shadow: 3px 6px 0px #000;
+  box-shadow: 3px 6px 0px #000; */
+  height: 150px;
 }
 
 /* Cards */
@@ -731,6 +735,10 @@ a {
   .wrapper > .slide > * {
     max-width: 650px;
   }
+
+  .image-banner img {
+    height: 250px;
+  }
   .wrapper > .slide > .works-wrapper {
     max-width: 700px;
   }
@@ -863,6 +871,19 @@ a {
   }
 
   /* Banner */
+  #banner .heroimg {
+    display: block;
+    position: absolute;
+    left: -100px;
+    bottom: 0;;
+  }
+  .main-banner {
+    margin: 0px 5% 0 auto;
+  }
+  .image-banner img {
+    display: none;
+  }
+
   .text-banner .roles {
     font-size: 1.4rem;
   }
@@ -879,7 +900,7 @@ a {
     text-shadow: 5px 4px 0px #000;
   }
   .text-banner p.contacts i {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   /* Experience */
@@ -903,7 +924,7 @@ a {
   }
   #experience .carousel .card ul {
     font-size: 1.2rem;
-    line-height: 1.3rem;
+    line-height: 1.3rem;d
   }
 
   /* Tools */
@@ -949,12 +970,37 @@ a {
   }
 }
 
+@media screen and (min-width: 1366px) {
+  #banner .heroimg {
+    left: 5%;
+  }
+  .main-banner {
+    margin: 0px 6% 0 auto;
+  }
+}
+
 
 @media screen and (min-width: 1600px) {
+  #banner .heroimg {
+    left: 5%;
+  }
+  .main-banner {
+    margin: 0px 10% 0 auto;
+  }
+
   .wrapper > .slide > .works-wrapper {
     max-width: 1500px;
   }
   .works-item {
       width: 45%;
   }
+}
+
+@media screen and (min-width: 1920px) {
+  #banner .heroimg {
+        left: 18%;
+    }
+  .main-banner {
+        margin: 0px 0% 0 40%;
+    }
 }
