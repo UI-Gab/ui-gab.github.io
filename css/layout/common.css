@@ -369,6 +369,17 @@ a {
   color: var(--accent-color);
 }
 
+/* Skills */
+.wrapper > .slide#skills .vector {
+    display: none;
+}
+.skills .card {
+  font-size: 1.2rem;
+}
+.skills .card h4 {
+  font-weight: 900;
+}
+
 /* Sample Works */
 .wrapper > #sampleworks {
   height: auto;
@@ -513,10 +524,7 @@ a {
 
 /* Professional Experience section */
 #experience h1.title {
-    transform: rotate(270deg);
-    position: absolute;
-    left: -180px;
-    top: 300px;
+  max-width: 400px;
 }
 .accordionExperience {
     width: 95%;
@@ -568,6 +576,90 @@ a {
   background-image: url("https://i.imgur.com/4gU1ZyP.png")
 }
 
+
+ #experience .carousel.slide {
+    justify-content: flex-start;
+    height: 700px;
+    width: 100%;
+     background-color: transparent;
+}
+#experience .carousel .carousel-inner {
+    overflow: visible;
+}
+#experience .carousel .card {
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+#experience .carousel .carousel-control-next, 
+#experience .carousel .carousel-control-prev {
+    opacity: 1;
+    width: 10%;
+}
+#experience .carousel .carousel-control-prev-icon,
+#experience .carousel .carousel-control-next-icon {
+    filter: brightness(0) saturate(100%)
+}
+#experience .carousel-indicators button {
+    width: 14px;
+    height: 14px;
+    background: #cccccc;
+    margin: 0px 5px;
+    border: 0;
+    border-radius: 50px;
+    opacity: 1;
+}
+#experience .carousel-indicators button.active {
+    background: #000;
+}
+#experience .carousel .card h2.heading {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: var(--secondary-accent-color);
+}
+#experience .carousel .card h2.heading span {
+  display: block;
+}
+#experience .carousel .card h2.heading span.experience-position {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+#experience .carousel .card h2.heading span.experience-employer {
+  margin-top: 10px;
+}
+#experience .carousel .card h2.heading span.experience-date {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+#experience .carousel .card p {
+    font-style: italic;
+    margin: 10px 0;
+  text-align: center;
+}
+#experience .carousel .card p span {
+    display: block;
+}
+
+#experience .carousel .card ul {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  padding: 20px 15px 20px 35px;
+}
+#experience .carousel .card ul li {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
 /* References */
 .reference-item {
   margin-bottom: 15px;
@@ -618,6 +710,12 @@ a {
         font-size: 1.1rem;
         padding: 10px 20px 5px;
     }
+}
+
+@media screen and (min-width: 575px) {
+  #experience .carousel.slide {
+    height: 550px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -680,6 +778,9 @@ a {
   .wrapper > .slide:not(#banner) .vector {
     height: 200px;
   }
+  .wrapper > .slide#skills .vector {
+    display: none;
+  }
   .wrapper > .slide > .tools-content {
     max-width: 400px;
   }  
@@ -694,7 +795,6 @@ a {
       margin-left: 0;
   }
   
-  
   .accordionExperience .accordion-button.heading > div > span:first-child {
     font-size: 1.2rem;
   }
@@ -705,7 +805,7 @@ a {
   }
   .tools-item {
     font-size: 1.2rem;
-  }
+  }  
 
 }
 
@@ -836,6 +936,7 @@ a {
     max-height: 90%;
   }
 }
+
 
 @media screen and (min-width: 1600px) {
   .wrapper > .slide > .works-wrapper {
