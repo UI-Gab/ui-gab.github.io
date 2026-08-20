@@ -127,6 +127,7 @@ header button i {
 }
 
 /* Main Banner */
+
 #banner .heroimg {
   display: none;
 }
@@ -173,6 +174,38 @@ header button i {
   box-shadow: 3px 6px 0px #000; */
   height: 150px;
 }
+
+/* 1. Ensure the parent container can hold absolute elements */
+#banner {
+  position: relative;
+  overflow: hidden; /* Prevents the video from spilling out */
+  z-index: 1;
+}
+
+/* 2. Style the background video */
+#banner .bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the video perfectly */
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover; /* Forces video to behave like a background-image */
+  z-index: -1; /* Pushes the video behind your text and grid cards */
+  opacity: 0.3; /* Optional: Mutes the video visually so text stays readable */
+}
+
+/* 3. Ensure your existing content layers properly on top */
+#banner .title, 
+#samplbannereworks .works-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+
+
 
 /* Cards */
 .card {
@@ -359,6 +392,19 @@ a {
 }
 
 /* Tools and Tech */
+#tools .tools-splash {
+  display: none;
+  position: absolute;
+  left: -5%;
+  height: 450px;
+}
+#tools .tools-splash2 {
+  display: none;
+  position: absolute;
+  right: -2%;
+  bottom: 10%;
+  height: 70vh;
+}
 .tools-content {
   width: 70%;
 }
@@ -447,6 +493,45 @@ a {
 }
 
 
+/* 1. Ensure the parent container can hold absolute elements */
+#sampleworks {
+  position: relative;
+  overflow: hidden; /* Prevents the video from spilling out */
+  z-index: 1;
+}
+
+/* 2. Style the background video */
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the video perfectly */
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover; /* Forces video to behave like a background-image */
+  z-index: -1; /* Pushes the video behind your text and grid cards */
+  opacity: 0.3; /* Optional: Mutes the video visually so text stays readable */
+}
+
+/* 3. Ensure your existing content layers properly on top */
+#sampleworks .title, 
+#sampleworks .works-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Buttons */
 .primary-btn {
     color: #fff;
@@ -528,6 +613,17 @@ a {
 #experience h1.title {
   max-width: 400px;
 }
+
+ #experience > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+#experience > div:nth-child(3) {
+  display: none;
+}
 .accordionExperience {
     width: 95%;
     border: 2px solid #000;
@@ -537,9 +633,7 @@ a {
     margin-left: 40px;
     width: 85%;
 }
-#experience .vector {
-    display: none;
-}
+
 .accordionExperience .accordion-button.heading {
     font-size: .8rem; 
 }
@@ -913,6 +1007,27 @@ a {
   .accordionExperience .accordion-body ul {
     font-size: 1.1rem;
   }
+
+  #experience {
+    flex-direction: row;
+  }
+  #experience > div:nth-child(2) {
+    display: block;
+    width: 60%;
+  }
+  #experience > div:nth-child(3) {
+    display: block;
+    width: 40%;
+  }
+  #experience > div {    
+    overflow: hidden;
+  }
+  #experience > div img {
+    width: 100%;
+  }
+
+
+
   #experience .carousel.slide {
     height: 500px;
   }
@@ -928,9 +1043,19 @@ a {
   }
 
   /* Tools */
-  .tools-item {
-    font-size: 1.3rem;
+  #tools .tools-splash,
+  #tools .tools-splash2 {
+    display: block;  
+  } 
+  .wrapper > .slide > .tools-content {
+    max-width: 520px;
   }
+  .tools-item {
+    font-size: 1.5rem;
+  }
+
+
+  
 
   /* Skills */
   .skills ul {
