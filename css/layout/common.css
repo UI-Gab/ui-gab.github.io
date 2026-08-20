@@ -420,13 +420,32 @@ a {
 }
 
 /* Skills */
-.wrapper > .slide#skills .vector {
-    display: none;
+.wrapper > .slide#skills {
+  background-color: var(--accent-color);
 }
 
+.skills .card {
+  z-index: 2;
+}
 .skills .card h4 {
   font-weight: 900;
 }
+.skills .skills-splash {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  height: 70vh;
+  left: 10%;
+  bottom: 0;
+}
+.skills .skills-splash2 {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  height: 50vh;
+  right: 0%;
+  bottom: -40px;
+} 
 
 /* Sample Works */
 .wrapper > #sampleworks {
@@ -1061,6 +1080,10 @@ a {
   .skills ul {
     font-size: 1.2rem;
   }
+  .skills .skills-splash,
+  .skills .skills-splash2 {
+    display: block;
+  }
 
   /* Portfolio */
   .wrapper > .slide > .works-wrapper {
@@ -1119,6 +1142,13 @@ a {
   .works-item {
       width: 45%;
   }
+
+  .skills .skills-splash {
+    left: 20%;
+  }
+  .skills .skills-splash2 {
+    right: 10%;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -1128,4 +1158,11 @@ a {
   .main-banner {
         margin: 0px 0% 0 40%;
     }
+
+    .skills .skills-splash {
+    left: 23%;
+  }
+  .skills .skills-splash2 {
+    right: 15%;
+  }
 }
