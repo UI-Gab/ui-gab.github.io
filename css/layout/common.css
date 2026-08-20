@@ -194,7 +194,7 @@ header button i {
   height: auto;
   object-fit: cover; /* Forces video to behave like a background-image */
   z-index: -1; /* Pushes the video behind your text and grid cards */
-  opacity: 0.3; /* Optional: Mutes the video visually so text stays readable */
+  opacity: 0.2; /* Optional: Mutes the video visually so text stays readable */
 }
 
 /* 3. Ensure your existing content layers properly on top */
