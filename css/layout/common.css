@@ -346,59 +346,16 @@ a {
 
 
 
-/* Education carousel */
+/* Education  */
+.educ .card {
+  margin: 10px 0;
+}
+.educ .card p span {
+  display: block;
+}
 #educ h1.title {
   text-align: center;
   margin-bottom: 30px;
-}
- .educ .carousel.slide {
-    justify-content: flex-start;
-    height: 300px;
-    width: 100%;
-     background-color: transparent;
-}
-#educ .carousel .carousel-inner {
-    overflow: visible;
-}
-#educ .carousel .card {
-    width: 80%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-}
-#educ .carousel .carousel-control-next, 
-#educ .carousel .carousel-control-prev {
-    opacity: 1;
-    width: 10%;
-}
-#educ .carousel .carousel-control-prev-icon,
-#educ .carousel .carousel-control-next-icon {
-    filter: brightness(0) saturate(100%)
-}
-#educ .carousel-indicators button {
-    width: 14px;
-    height: 14px;
-    background: #cccccc;
-    margin: 0px 5px;
-    border: 0;
-    border-radius: 50px;
-    opacity: 1;
-}
-#educ .carousel-indicators button.active {
-    background: #000;
-}
-#educ .carousel .card h2.heading {
-  text-align: center;
-}
-
-#educ .carousel .card p {
-    font-style: italic;
-    margin: 10px 0;
-  text-align: center;
-}
-#educ .carousel .card p span {
-    display: block;
 }
 
 /* Tools and Tech */
@@ -1117,15 +1074,13 @@ a {
   }
 
   /* Education */
-  .educ .carousel.slide {
-    max-width: 790px;
+  .educ .card {
+    max-width: 550px;
   }
-  #educ .carousel .card h2.heading {
-    font-size: 2rem;
+  .educ .heading {
+    font-size: 1.6rem;
   }
-  #educ .carousel .card p {
-    font-size: 1.2rem;
-  }
+
 
   /* References */
   .references h2.heading {
