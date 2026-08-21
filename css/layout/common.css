@@ -2,7 +2,7 @@
 
 :root {
   --main-background-color: #2b273f;
-  --secondary-background-color: #fafafa;
+  --secondary-background-color: #f8f0e3;
   --box-color: #4D59E3;
   --main-font-color: #fff;
   --secondary-font-color: #2b273f ;
@@ -163,8 +163,18 @@ header button i {
     color: var(--secondary-accent-color);
 }
 .main-banner .short-profile {
-  line-height: 1;
   margin: 20px auto 0;
+  line-height: 1.1;
+  margin: 20px auto 0;
+  font-size: 1.1rem;
+}
+.main-banner .contact-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  font-weight: 900;
 }
 .image-banner img {
   /* border-radius:80px;
@@ -420,10 +430,6 @@ a {
 }
 
 /* Skills */
-.wrapper > .slide#skills {
-  background-color: var(--accent-color);
-}
-
 .skills .card {
   z-index: 2;
 }
@@ -987,11 +993,16 @@ a {
   #banner .heroimg {
     display: block;
     position: absolute;
-    left: -100px;
+    left: -170px;
     bottom: 0;;
+    max-width: none;
+    width: 750px;
   }
   .main-banner {
     margin: 0px 5% 0 auto;
+  }
+  #banner .title {
+    font-size: 6rem;
   }
   .image-banner img {
     display: none;
@@ -1001,7 +1012,7 @@ a {
     font-size: 1.4rem;
   }
   .main-banner .short-profile {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }  
   .image-banner {
     margin-top: 40px;
@@ -1120,7 +1131,7 @@ a {
 
 @media screen and (min-width: 1366px) {
   #banner .heroimg {
-    left: 5%;
+    left: -9%;
   }
   .main-banner {
     margin: 0px 6% 0 auto;
@@ -1153,10 +1164,10 @@ a {
 
 @media screen and (min-width: 1920px) {
   #banner .heroimg {
-        left: 18%;
+        left: 15%;
     }
   .main-banner {
-        margin: 0px 0% 0 40%;
+        margin: 0px 0% 0 36%;
     }
 
     .skills .skills-splash {
