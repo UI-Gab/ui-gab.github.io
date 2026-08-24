@@ -457,6 +457,12 @@ a {
   width: 100%;
   cursor: pointer;
 }
+.works-item:hover {
+  scale: 1.2;
+  z-index: 2;
+  transition: scale 0.3s ease;
+
+}
 .works-item .works-desc {
   width: 100%;
   line-height: 1.2;
