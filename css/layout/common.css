@@ -919,6 +919,9 @@ a {
   .modal.portfolio .modal-dialog {
     max-width: 575px;
   }
+  #portfolio-quantum .modal-dialog {
+    max-width: 900px;
+  }
 
   #portfolio-epreels .modal-dialog {
     max-width: 950px;
