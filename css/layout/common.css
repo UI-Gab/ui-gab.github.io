@@ -1081,6 +1081,16 @@ a {
     max-width: 350px;
     width: 30%;
   }
+  #portfolio-shortvids .modal-dialog {
+    max-width: 1024px;
+
+  }
+  #portfolio-shortvids .modal-body .shortform-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
 
   /* Education */
   .educ .card {
@@ -1099,9 +1109,11 @@ a {
     font-size: 1.2rem;
   }
 
+
   .modal-dialog-scrollable .modal-content {
     max-height: 90%;
   }
+
 }
 
 @media screen and (min-width: 1366px) {
